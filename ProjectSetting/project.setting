@@ -1,0 +1,55 @@
+{
+  "projectName": "MeteorEscape",
+  "gameName": "MeteorEscape",
+  "companyName": "openhazel",
+  "gameInstance": "qc_game",
+  "frameRate": {
+    "mobile": 30,
+    "desktop": 60
+  },
+  "fixedGameSize": {
+    "enabled": true,
+    "width": 1440,
+    "height": 960
+  },
+  "backgroundColor": 4671303,
+  "runInBackground": true,
+  "antialias": true,
+  "renderer": "Auto",
+  "transparent": false,
+  "developerMode": false,
+  "appCache": true,
+  "dirtyRectangles": true,
+  "dirtyRectanglesShow": false,
+  "customSettings": {},
+  "toolFlag": 508,
+  "version": "1",
+  "loading": "",
+  "localStorageID": "com.openhazel.kwiki.meteorescape",
+  "resolutionRatio": 0.25,
+  "publish": {
+    "android": "build/android",
+    "ios": "build/ios",
+    "browsers": "build/browsers",
+    "browsers_timestamp": true,
+    "android_timestamp": true,
+    "ios_timestamp": true
+  },
+  "android": {
+    "minTarget": 16,
+    "target": 16,
+    "buildCode": 0,
+    "frameRate": 30,
+    "renderer": "Canvas",
+    "defaultOrientation": 0
+  },
+  "ios": {
+    "target": "8.0",
+    "buildCode": 0,
+    "frameRate": 30,
+    "renderer": "Auto",
+    "defaultOrientation": 0,
+    "splashScaling": 2
+  },
+  "buildVersion": "1"
+}
