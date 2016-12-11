@@ -46,18 +46,6 @@ FallingMeteor.prototype.onOverlap = function(o1, o2) {
     explode = self.game.add.clone(explode);
 
     
-
-    var shieldHits = self.game.storage.get('shieldHits');
-    if (!shieldHits) {
-        shieldHits = 1;
-    } else {
-        shieldHits += 1;
-    }
-    self.game.storage.set('shieldHits', shieldHits);
-    self.game.storage.save();
-    var shieldHitsText = self.game.world.children[0].find('/ui/shield-hits');
-    shieldHitsText.text = 'Shield Hits:' + shieldHits;
-
     explode.x = o1.x;
     explode.y = o1.y;
     explode.onFinished = function() {
@@ -69,10 +57,20 @@ FallingMeteor.prototype.onOverlap = function(o1, o2) {
     self.restartPos();
     
     if (!self.showingDamage) {
-
         self.showingDamage = true;
+        
+        var shieldHits = self.game.storage.get('shieldHits');
+        if (!shieldHits) {
+            shieldHits = 1;
+        } else {
+            shieldHits += 1;
+        }
+        self.game.storage.set('shieldHits', shieldHits);
+        self.game.storage.save();
+        var shieldHitsText = self.game.world.children[0].find('/ui/shield-hits');
+        shieldHitsText.text = 'Shield Hits:' + shieldHits;
+
         self.rocketShip.getScript('qc.TweenAlpha').enable=true;
-        explode.visible = true;
         this.game.timer.add(1500, function() {
             self.rocketShip.getScript('qc.TweenAlpha').enable=false;
             self.rocketShip.alpha = 1;
