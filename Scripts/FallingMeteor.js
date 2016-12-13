@@ -1,4 +1,4 @@
-4// define a user behaviour
+// define a user behaviour
 var FallingMeteor = qc.defineBehaviour('qc.meteor.FallingMeteor', qc.Behaviour, function() {
     // need this behaviour be scheduled in editor
     //this.runInEditor = true;
@@ -11,7 +11,7 @@ var FallingMeteor = qc.defineBehaviour('qc.meteor.FallingMeteor', qc.Behaviour, 
 FallingMeteor.prototype.awake = function() {
     var self = this;
 	self.body = self.getScript('qc.arcade.RigidBody');
-    self.rocketShip = self.game.world.children[0].find('/rocketship');
+    self.rocketShip = self.game.world.find('/UIRoot/rocketship');
     self.body.addOverlap( self.rocketShip );
     // create body if it does not exist TODO
 };
@@ -40,7 +40,7 @@ FallingMeteor.prototype.onCollide = function(o1, o2) {
 };
 
 FallingMeteor.prototype.onOverlap = function(o1, o2) {
-    // console.log('onOverlap', o1, o2);
+    //console.log('onOverlap', o1, o2);
     var self = this;
     var explode = self.game.world.find('/UIRoot/explode');
     explode = self.game.add.clone(explode);
@@ -67,7 +67,7 @@ FallingMeteor.prototype.onOverlap = function(o1, o2) {
         }
         self.game.storage.set('shieldHits', shieldHits);
         self.game.storage.save();
-        var shieldHitsText = self.game.world.children[0].find('/ui/shield-hits');
+        var shieldHitsText = self.game.world.find('/UIRoot/ui/shield-hits');
         shieldHitsText.text = 'Shield Hits:' + shieldHits;
 
         self.rocketShip.getScript('qc.TweenAlpha').enable=true;

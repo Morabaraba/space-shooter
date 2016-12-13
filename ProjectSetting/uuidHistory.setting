@@ -4,5 +4,10 @@
   "Assets/scene/menus/menu.bin": "05a4a253-9020-4be2-bf47-2cdd5e9ae340",
   "Assets/sprite/meteor.bin": "65ead187-1f97-4b8f-9880-39c8c00988d4",
   "Assets/sprite/rocketship.bin": "3d26ed8e-5dd3-4518-9fa7-ff7c5a03631c",
-  "Temp/scene_editor.bin": "2d7bcce9-8d81-4550-b948-05e15ebd77bc"
+  "Temp/scene_editor.bin": "2d7bcce9-8d81-4550-b948-05e15ebd77bc",
+  "Assets/prefab/UIImage.bin": "f54a0234-9f2e-437e-a849-0367dd7a6000",
+  "Assets/prefab/Meteor.bin": "f54a0234-9f2e-437e-a849-0367dd7a6000",
+  "Assets/sprite/bullet_1.bin": "a83cef71-5031-4495-b0ec-888a29a6265f",
+  "Assets/sprite/bullet.bin": "994c06be-e568-4dc4-8b91-a8a197ad870f",
+  "Assets/sprite/bullet3.bin": "71053a80-aebd-4eb0-983f-4e9300abb6a3"
 }

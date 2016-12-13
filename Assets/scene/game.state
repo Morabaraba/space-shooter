@@ -41,10 +41,10 @@
     "position": [
       0,
       0,
-      156.62033195020746,
-      1.2468879668049908,
-      156.62033195020746,
-      1.2468879668049908,
+      93.41493775933606,
+      1.1099585062240749,
+      93.41493775933606,
+      1.1099585062240749,
       1440,
       960,
       0,
@@ -58,11 +58,11 @@
     ],
     "scaleX": [
       3,
-      0.6234439834024896
+      0.5549792531120332
     ],
     "scaleY": [
       3,
-      0.6234439834024896
+      0.5549792531120332
     ],
     "rotation": [
       3,
@@ -77,6 +77,88 @@
       null
     ],
     "children": [
+      {
+        "class": "qc.Node",
+        "data": {
+          "uuid": "cb8cfa84-69aa-4f33-9f3e-6a2926a90a11",
+          "_prefab": [
+            7,
+            ""
+          ],
+          "__lock": [
+            5,
+            null
+          ],
+          "name": [
+            7,
+            "Game"
+          ],
+          "uniqueName": [
+            7,
+            ""
+          ],
+          "ignoreDestroy": [
+            5,
+            false
+          ],
+          "alpha": [
+            3,
+            1
+          ],
+          "visible": [
+            5,
+            true
+          ],
+          "colorTint": [
+            14,
+            16777215
+          ],
+          "static": [
+            5,
+            false
+          ],
+          "scripts": [],
+          "position": [
+            0,
+            0,
+            0.000011733571710692559,
+            7.076166763653191e-8,
+            0.000011733571710692559,
+            7.076166763653191e-8,
+            100,
+            100,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "scaleX": [
+            3,
+            1.000000035380836
+          ],
+          "scaleY": [
+            3,
+            1.000000035380836
+          ],
+          "rotation": [
+            3,
+            0
+          ],
+          "interactive": [
+            5,
+            false
+          ],
+          "isFiltersThrough": [
+            5,
+            null
+          ],
+          "children": []
+        }
+      },
       {
         "class": "qc.UIRoot",
         "data": {
@@ -216,21 +298,21 @@
                     "data": "8bc97d05-fa9a-4480-a74f-9b46560c91da"
                   },
                   {
-                    "clazz": "qc.kwiki.KeyboardMovement",
-                    "data": "2cb04eb8-3d01-4768-bb22-f1f7ed1c2ddd"
-                  },
-                  {
                     "clazz": "qc.TweenAlpha",
                     "data": "a585d54a-183b-4083-a26f-f88393de7e29"
+                  },
+                  {
+                    "clazz": "qc.engine.Rocketship",
+                    "data": "64156819-9a52-476a-a11b-1c0de505f82c"
                   }
                 ],
                 "position": [
-                  0,
-                  0,
-                  682.3439340400487,
-                  782.3863368668955,
-                  682.3439340400487,
-                  782.3863368668955,
+                  0.48581260523350933,
+                  -0.002697392359765943,
+                  742.9552572511026,
+                  520.7455629904819,
+                  742.9552572511026,
+                  520.7455629904819,
                   148,
                   317,
                   0,
@@ -298,7 +380,7 @@
                     ],
                     "collideWorldBounds": [
                       5,
-                      false
+                      true
                     ],
                     "allowRotation": [
                       5,
@@ -402,9 +484,7 @@
                     "tilePadding": null,
                     "collides": [
                       19,
-                      [
-                        null
-                      ]
+                      []
                     ],
                     "overlaps": [
                       19,
@@ -413,20 +493,6 @@
                     "ccdIterations": [
                       1,
                       0
-                    ]
-                  }
-                },
-                "2cb04eb8-3d01-4768-bb22-f1f7ed1c2ddd": {
-                  "class": "qc.kwiki.KeyboardMovement",
-                  "data": {
-                    "uuid": [
-                      7,
-                      "2cb04eb8-3d01-4768-bb22-f1f7ed1c2ddd"
-                    ],
-                    "enable": true,
-                    "velocity": [
-                      1,
-                      300
                     ]
                   }
                 },
@@ -497,6 +563,28 @@
                       1
                     ]
                   }
+                },
+                "64156819-9a52-476a-a11b-1c0de505f82c": {
+                  "class": "qc.engine.Rocketship",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "64156819-9a52-476a-a11b-1c0de505f82c"
+                    ],
+                    "enable": true,
+                    "velocity": [
+                      1,
+                      300
+                    ],
+                    "bulletRoot": [
+                      18,
+                      "792eb464-347e-4682-a2c6-b37811a54133"
+                    ],
+                    "bulletPrefab": [
+                      18,
+                      "09a137e5-0a3e-49f4-93f5-9c644998bb96"
+                    ]
+                  }
                 }
               }
             },
@@ -544,10 +632,10 @@
                 "position": [
                   0,
                   0,
-                  0,
-                  0,
-                  0,
-                  0,
+                  13.611651112064905,
+                  9.589338513172152,
+                  13.611651112064905,
+                  9.589338513172152,
                   1440,
                   960,
                   0,
@@ -580,258 +668,6 @@
                   null
                 ],
                 "children": [
-                  {
-                    "class": "qc.UIImage",
-                    "data": {
-                      "uuid": "41ead8e7-af6d-4134-9141-d2c77bac1e16",
-                      "_prefab": [
-                        7,
-                        ""
-                      ],
-                      "__lock": [
-                        5,
-                        null
-                      ],
-                      "name": [
-                        7,
-                        "UIImage"
-                      ],
-                      "uniqueName": [
-                        7,
-                        ""
-                      ],
-                      "ignoreDestroy": [
-                        5,
-                        false
-                      ],
-                      "alpha": [
-                        3,
-                        1
-                      ],
-                      "visible": [
-                        5,
-                        true
-                      ],
-                      "colorTint": [
-                        14,
-                        16777215
-                      ],
-                      "static": [
-                        5,
-                        false
-                      ],
-                      "scripts": [
-                        {
-                          "clazz": "qc.arcade.RigidBody",
-                          "data": "acf32405-2781-4a58-850a-70b888c8808a"
-                        },
-                        {
-                          "clazz": "qc.meteor.FallingMeteor",
-                          "data": "e40cafb9-e9ed-46a1-ba85-b1fec9095ee2"
-                        }
-                      ],
-                      "position": [
-                        0,
-                        0,
-                        493.8168685617584,
-                        1718.2936513721625,
-                        493.8168685617584,
-                        1718.2936513721625,
-                        68,
-                        70,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                      ],
-                      "scaleX": [
-                        3,
-                        1.5000000618398208
-                      ],
-                      "scaleY": [
-                        3,
-                        1.5000000618398208
-                      ],
-                      "rotation": [
-                        3,
-                        0
-                      ],
-                      "interactive": [
-                        5,
-                        false
-                      ],
-                      "isFiltersThrough": [
-                        5,
-                        null
-                      ],
-                      "children": [],
-                      "texture": [
-                        10,
-                        "Assets/sprite/meteor.bin",
-                        "65ead187-1f97-4b8f-9880-39c8c00988d4",
-                        0
-                      ],
-                      "frame": null,
-                      "imageType": [
-                        3,
-                        0
-                      ],
-                      "skewX": [
-                        3,
-                        null
-                      ],
-                      "skewY": [
-                        3,
-                        null
-                      ]
-                    },
-                    "__json": {
-                      "acf32405-2781-4a58-850a-70b888c8808a": {
-                        "class": "qc.arcade.RigidBody",
-                        "data": {
-                          "uuid": [
-                            7,
-                            "acf32405-2781-4a58-850a-70b888c8808a"
-                          ],
-                          "enable": true,
-                          "mass": [
-                            3,
-                            1
-                          ],
-                          "collideWorldBounds": [
-                            5,
-                            false
-                          ],
-                          "allowRotation": [
-                            5,
-                            true
-                          ],
-                          "allowGravity": [
-                            5,
-                            true
-                          ],
-                          "velocity": [
-                            24,
-                            "qc.Point",
-                            [
-                              0,
-                              400
-                            ]
-                          ],
-                          "maxVelocity": [
-                            24,
-                            "qc.Point",
-                            [
-                              10000,
-                              10000
-                            ]
-                          ],
-                          "acceleration": [
-                            24,
-                            "qc.Point",
-                            [
-                              0,
-                              0
-                            ]
-                          ],
-                          "drag": [
-                            24,
-                            "qc.Point",
-                            [
-                              0,
-                              0
-                            ]
-                          ],
-                          "gravity": [
-                            24,
-                            "qc.Point",
-                            [
-                              0,
-                              0
-                            ]
-                          ],
-                          "friction": [
-                            24,
-                            "qc.Point",
-                            [
-                              1,
-                              0
-                            ]
-                          ],
-                          "angularVelocity": [
-                            3,
-                            0
-                          ],
-                          "maxAngular": [
-                            3,
-                            1000
-                          ],
-                          "angularAcceleration": [
-                            3,
-                            0
-                          ],
-                          "angularDrag": [
-                            3,
-                            0
-                          ],
-                          "bounce": [
-                            24,
-                            "qc.Point",
-                            [
-                              0,
-                              0
-                            ]
-                          ],
-                          "immovable": [
-                            5,
-                            false
-                          ],
-                          "moves": [
-                            5,
-                            true
-                          ],
-                          "checkCollision": [
-                            9,
-                            {
-                              "none": false,
-                              "any": true,
-                              "up": true,
-                              "down": true,
-                              "left": true,
-                              "right": true
-                            }
-                          ],
-                          "tilePadding": null,
-                          "collides": [
-                            19,
-                            []
-                          ],
-                          "overlaps": [
-                            19,
-                            []
-                          ],
-                          "ccdIterations": [
-                            1,
-                            0
-                          ]
-                        }
-                      },
-                      "e40cafb9-e9ed-46a1-ba85-b1fec9095ee2": {
-                        "class": "qc.meteor.FallingMeteor",
-                        "data": {
-                          "uuid": [
-                            7,
-                            "e40cafb9-e9ed-46a1-ba85-b1fec9095ee2"
-                          ],
-                          "enable": true
-                        }
-                      }
-                    }
-                  },
                   {
                     "class": "qc.UIImage",
                     "data": {
@@ -4256,7 +4092,7 @@
                       ],
                       "name": [
                         7,
-                        "aa"
+                        "Asteroids-Destroyed"
                       ],
                       "uniqueName": [
                         7,
@@ -4796,6 +4632,424 @@
                   null
                 ]
               }
+            },
+            {
+              "class": "qc.UIImage",
+              "data": {
+                "uuid": "09a137e5-0a3e-49f4-93f5-9c644998bb96",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "bullet"
+                ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [
+                  {
+                    "clazz": "qc.TweenPosition",
+                    "data": "916efe54-34f1-44d3-a7b7-096cdb0500bd"
+                  },
+                  {
+                    "clazz": "qc.arcade.RigidBody",
+                    "data": "1d58cd4a-6494-4ee9-aa7e-ae63cf1fda73"
+                  },
+                  {
+                    "clazz": "qc.engine.Bullet",
+                    "data": "5ff430dd-7acc-40ec-b3b6-98436f91bb54"
+                  }
+                ],
+                "position": [
+                  0.4939577692948313,
+                  0.3831534899068545,
+                  -87.6194564421291,
+                  63.93927728972818,
+                  -87.6194564421291,
+                  63.93927728972818,
+                  29,
+                  29,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  1
+                ],
+                "scaleY": [
+                  3,
+                  1
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": [],
+                "texture": [
+                  10,
+                  "Assets/sprite/bullet.bin",
+                  "994c06be-e568-4dc4-8b91-a8a197ad870f",
+                  0
+                ],
+                "frame": null,
+                "imageType": [
+                  3,
+                  0
+                ],
+                "skewX": [
+                  3,
+                  null
+                ],
+                "skewY": [
+                  3,
+                  null
+                ]
+              },
+              "__json": {
+                "916efe54-34f1-44d3-a7b7-096cdb0500bd": {
+                  "class": "qc.TweenPosition",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "916efe54-34f1-44d3-a7b7-096cdb0500bd"
+                    ],
+                    "enable": false,
+                    "_curve": [
+                      22,
+                      "qc.BezierCurve",
+                      [
+                        [
+                          0,
+                          0,
+                          1,
+                          1
+                        ],
+                        [
+                          1,
+                          1,
+                          1,
+                          1
+                        ],
+                        [
+                          0,
+                          0
+                        ]
+                      ]
+                    ],
+                    "sampleMethod": [
+                      3,
+                      0
+                    ],
+                    "style": [
+                      3,
+                      0
+                    ],
+                    "delay": [
+                      3,
+                      0
+                    ],
+                    "duration": [
+                      3,
+                      1
+                    ],
+                    "tweenGroup": [
+                      3,
+                      0
+                    ],
+                    "flag": [
+                      7,
+                      ""
+                    ],
+                    "playOnAwake": [
+                      5,
+                      false
+                    ],
+                    "from": [
+                      24,
+                      "qc.Point",
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "to": [
+                      24,
+                      "qc.Point",
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "moveAxis": [
+                      3,
+                      255
+                    ]
+                  }
+                },
+                "1d58cd4a-6494-4ee9-aa7e-ae63cf1fda73": {
+                  "class": "qc.arcade.RigidBody",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "1d58cd4a-6494-4ee9-aa7e-ae63cf1fda73"
+                    ],
+                    "enable": true,
+                    "mass": [
+                      3,
+                      1
+                    ],
+                    "collideWorldBounds": [
+                      5,
+                      false
+                    ],
+                    "allowRotation": [
+                      5,
+                      true
+                    ],
+                    "allowGravity": [
+                      5,
+                      true
+                    ],
+                    "velocity": [
+                      24,
+                      "qc.Point",
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "maxVelocity": [
+                      24,
+                      "qc.Point",
+                      [
+                        10000,
+                        10000
+                      ]
+                    ],
+                    "acceleration": [
+                      24,
+                      "qc.Point",
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "drag": [
+                      24,
+                      "qc.Point",
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "gravity": [
+                      24,
+                      "qc.Point",
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "friction": [
+                      24,
+                      "qc.Point",
+                      [
+                        1,
+                        0
+                      ]
+                    ],
+                    "angularVelocity": [
+                      3,
+                      0
+                    ],
+                    "maxAngular": [
+                      3,
+                      1000
+                    ],
+                    "angularAcceleration": [
+                      3,
+                      0
+                    ],
+                    "angularDrag": [
+                      3,
+                      0
+                    ],
+                    "bounce": [
+                      24,
+                      "qc.Point",
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "immovable": [
+                      5,
+                      false
+                    ],
+                    "moves": [
+                      5,
+                      true
+                    ],
+                    "checkCollision": [
+                      9,
+                      {
+                        "none": false,
+                        "any": true,
+                        "up": true,
+                        "down": true,
+                        "left": true,
+                        "right": true
+                      }
+                    ],
+                    "tilePadding": null,
+                    "collides": [
+                      19,
+                      []
+                    ],
+                    "overlaps": [
+                      19,
+                      []
+                    ],
+                    "ccdIterations": [
+                      1,
+                      0
+                    ]
+                  }
+                },
+                "5ff430dd-7acc-40ec-b3b6-98436f91bb54": {
+                  "class": "qc.engine.Bullet",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "5ff430dd-7acc-40ec-b3b6-98436f91bb54"
+                    ],
+                    "enable": true
+                  }
+                }
+              }
+            },
+            {
+              "class": "qc.Node",
+              "data": {
+                "uuid": "792eb464-347e-4682-a2c6-b37811a54133",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "bullets"
+                ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [],
+                "position": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  100,
+                  100,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  1
+                ],
+                "scaleY": [
+                  3,
+                  1
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": []
+              }
             }
           ]
         },
@@ -4934,6 +5188,10 @@
     "d31138eb-f4cd-4dee-8a53-322230e88315": {
       "key": "Assets/atlas/explosion.bin",
       "uuid": "d31138eb-f4cd-4dee-8a53-322230e88315"
+    },
+    "994c06be-e568-4dc4-8b91-a8a197ad870f": {
+      "key": "Assets/sprite/bullet.bin",
+      "uuid": "994c06be-e568-4dc4-8b91-a8a197ad870f"
     }
   }
 }
