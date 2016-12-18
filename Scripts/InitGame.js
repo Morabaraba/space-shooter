@@ -10,6 +10,7 @@ var InitGame = qc.defineBehaviour('qc.engine.InitGame', qc.Behaviour, function()
 InitGame.prototype.awake = function() {
     var self = this;
 	self.game.storage.set('shieldHits', 0);
+    self.game.storage.set('asteroidsDetroyed', 0);
 };
 
 // Called every frame, if the behaviour is enabled.

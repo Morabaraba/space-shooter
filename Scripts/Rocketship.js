@@ -7,6 +7,7 @@ var Rocketship = qc.defineBehaviour('qc.engine.Rocketship', qc.Behaviour, functi
     this.bulletRoot = null;
     this.bulletPrefab = null;
     this._fireTime = 0;    
+    this.bulletCount = 10;
 }, {
     // fields need to be serialized
     velocity: qc.Serializer.INT,
@@ -49,8 +50,14 @@ Rocketship.prototype.fire = function() {
     var self = this,
         rigidbody = this.getScript('qc.arcade.RigidBody');
     if (self.game.time.now - self._fireTime < 200) return;
+    if (this.bulletCount < 1) return;
+    
+    this.bulletCount = this.bulletCount - 1;
+    
+    var bcText = self.game.world.find('/UIRoot/ui/BulletCount');
+    bcText.text = '' + this.bulletCount;
+    
     self._fireTime = self.game.time.now;
-
     
     var bullet = self.game.add.clone(self.bulletPrefab, self.bulletRoot);
     bullet.x = self.gameObject.x;
@@ -64,13 +71,12 @@ Rocketship.prototype.fire = function() {
         bulletBody.addOverlap(node);    
     });
     
-   
     bulletBody.velocity = new qc.Point(0, -900);
     // Add a new time event to be called after one second(the interval will be affected by the timeScale)
     this.game.timer.add(1000, function() {
          bullet.destroy();
     });
-    
+    self.game.add.clone(self.game.world.find('/Sounds/Shoot')).play();
 };
 
 

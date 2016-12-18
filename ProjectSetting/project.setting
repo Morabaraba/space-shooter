@@ -13,7 +13,7 @@
     "height": 960
   },
   "backgroundColor": 4671303,
-  "runInBackground": true,
+  "runInBackground": false,
   "antialias": true,
   "renderer": "Auto",
   "transparent": false,

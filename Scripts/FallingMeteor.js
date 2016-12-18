@@ -59,6 +59,11 @@ FallingMeteor.prototype.onOverlap = function(o1, o2) {
     if (!self.showingDamage) {
         self.showingDamage = true;
         
+        self.game.add.clone(self.game.world.find('/Sounds/Explosion')).play();
+        this.game.timer.add(500, function() {
+            self.game.add.clone(self.game.world.find('/Sounds/Restore')).play();
+        });
+                            
         var shieldHits = self.game.storage.get('shieldHits');
         if (!shieldHits) {
             shieldHits = 1;
@@ -66,15 +71,16 @@ FallingMeteor.prototype.onOverlap = function(o1, o2) {
             shieldHits += 1;
         }
         self.game.storage.set('shieldHits', shieldHits);
-        self.game.storage.save();
+        //self.game.storage.save();
         var shieldHitsText = self.game.world.find('/UIRoot/ui/shield-hits');
-        shieldHitsText.text = 'Shield Hits:' + shieldHits;
+        shieldHitsText.text = '' + shieldHits;
 
         self.rocketShip.getScript('qc.TweenAlpha').enable=true;
         this.game.timer.add(1500, function() {
             self.rocketShip.getScript('qc.TweenAlpha').enable=false;
             self.rocketShip.alpha = 1;
             self.showingDamage = false;
+            
         });
     }
 

@@ -41,10 +41,10 @@
     "position": [
       0,
       0,
-      93.41493775933606,
-      1.1099585062240749,
-      93.41493775933606,
-      1.1099585062240749,
+      172.15560165975103,
+      1.1037344398339997,
+      172.15560165975103,
+      1.1037344398339997,
       1440,
       960,
       0,
@@ -58,11 +58,11 @@
     ],
     "scaleX": [
       3,
-      0.5549792531120332
+      0.5518672199170125
     ],
     "scaleY": [
       3,
-      0.5549792531120332
+      0.5518672199170125
     ],
     "rotation": [
       3,
@@ -156,7 +156,620 @@
             5,
             null
           ],
-          "children": []
+          "children": [
+            {
+              "class": "qc.UIImage",
+              "data": {
+                "uuid": "eee20130-ecb1-4a25-834f-8eb2b3c9f885",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "UIImage"
+                ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [],
+                "position": [
+                  0,
+                  0,
+                  -47.102941455778364,
+                  -298.01473893632897,
+                  -47.102941455778364,
+                  -298.01473893632897,
+                  512,
+                  512,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  3.0648660335805142
+                ],
+                "scaleY": [
+                  3,
+                  3.0648660335805142
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": [],
+                "texture": [
+                  10,
+                  "Assets/texture/deep-space.bin",
+                  "b13126da-d3d8-4637-bb4a-d948abfbc6d8",
+                  0
+                ],
+                "frame": null,
+                "imageType": [
+                  3,
+                  0
+                ],
+                "skewX": [
+                  3,
+                  null
+                ],
+                "skewY": [
+                  3,
+                  null
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "class": "qc.Node",
+        "data": {
+          "uuid": "c0e0ae62-915d-4b07-a16f-70e4d9cc5b8d",
+          "_prefab": [
+            7,
+            ""
+          ],
+          "__lock": [
+            5,
+            null
+          ],
+          "name": [
+            7,
+            "Sounds"
+          ],
+          "uniqueName": [
+            7,
+            ""
+          ],
+          "ignoreDestroy": [
+            5,
+            false
+          ],
+          "alpha": [
+            3,
+            1
+          ],
+          "visible": [
+            5,
+            true
+          ],
+          "colorTint": [
+            14,
+            16777215
+          ],
+          "static": [
+            5,
+            false
+          ],
+          "scripts": [],
+          "position": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            100,
+            100,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "scaleX": [
+            3,
+            1
+          ],
+          "scaleY": [
+            3,
+            1
+          ],
+          "rotation": [
+            3,
+            0
+          ],
+          "interactive": [
+            5,
+            false
+          ],
+          "isFiltersThrough": [
+            5,
+            null
+          ],
+          "children": [
+            {
+              "class": "qc.Sound",
+              "data": {
+                "uuid": "10f75bd7-0be1-4db6-9832-605f2fd2eeec",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "Explosion"
+                ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [],
+                "position": [
+                  0,
+                  0,
+                  -0.000001334764817784162,
+                  -5.2139288442276666e-8,
+                  -0.000001334764817784162,
+                  -5.2139288442276666e-8,
+                  100,
+                  100,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  0.9999999739303748
+                ],
+                "scaleY": [
+                  3,
+                  0.9999999739303748
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": [],
+                "audio": [
+                  12,
+                  "Assets/audio/explosion.mp3.bin",
+                  "9f5c32aa-636c-4267-83e9-a6ff072abd04"
+                ],
+                "loop": [
+                  5,
+                  false
+                ],
+                "volume": [
+                  3,
+                  0.5
+                ],
+                "playOnAwake": [
+                  5,
+                  false
+                ],
+                "mute": [
+                  5,
+                  false
+                ],
+                "destroyWhenStop": [
+                  5,
+                  false
+                ]
+              }
+            },
+            {
+              "class": "qc.Sound",
+              "data": {
+                "uuid": "4e932bfd-9471-4bc7-a194-63bf4aef2bd1",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "Shoot"
+                ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [],
+                "position": [
+                  0,
+                  0,
+                  -0.000002669529635568324,
+                  -1.042785753302411e-7,
+                  -0.000002669529635568324,
+                  -1.042785753302411e-7,
+                  100,
+                  100,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  0.9999999478607502
+                ],
+                "scaleY": [
+                  3,
+                  0.9999999478607502
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": [],
+                "audio": [
+                  12,
+                  "Assets/audio/shoot.mp3.bin",
+                  "a89bb759-5646-4fde-bd21-122a5bc4d72c"
+                ],
+                "loop": [
+                  5,
+                  false
+                ],
+                "volume": [
+                  3,
+                  0.5
+                ],
+                "playOnAwake": [
+                  5,
+                  false
+                ],
+                "mute": [
+                  5,
+                  false
+                ],
+                "destroyWhenStop": [
+                  5,
+                  false
+                ]
+              }
+            },
+            {
+              "class": "qc.Sound",
+              "data": {
+                "uuid": "b538079c-63c2-4e10-9d1f-83eeed59f696",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "Restore"
+                ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [],
+                "position": [
+                  0,
+                  0,
+                  -0.000001334764817784162,
+                  -5.2139288442276666e-8,
+                  -0.000001334764817784162,
+                  -5.2139288442276666e-8,
+                  100,
+                  100,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  0.9999999739303748
+                ],
+                "scaleY": [
+                  3,
+                  0.9999999739303748
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": [],
+                "audio": [
+                  12,
+                  "Assets/audio/restore.mp3.bin",
+                  "af79344c-3728-4876-9c43-d72c142288bf"
+                ],
+                "loop": [
+                  5,
+                  false
+                ],
+                "volume": [
+                  3,
+                  0.5
+                ],
+                "playOnAwake": [
+                  5,
+                  false
+                ],
+                "mute": [
+                  5,
+                  false
+                ],
+                "destroyWhenStop": [
+                  5,
+                  false
+                ]
+              }
+            },
+            {
+              "class": "qc.Sound",
+              "data": {
+                "uuid": "cd23fe28-e627-41f3-af7c-07432091598e",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "Background"
+                ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [],
+                "position": [
+                  0,
+                  0,
+                  -0.000001334764817784162,
+                  -5.2139288442276666e-8,
+                  -0.000001334764817784162,
+                  -5.2139288442276666e-8,
+                  100,
+                  100,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  0.9999999739303748
+                ],
+                "scaleY": [
+                  3,
+                  0.9999999739303748
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": [],
+                "audio": [
+                  12,
+                  "Assets/audio/background-loop.mp3.bin",
+                  "c0f00857-6162-4f67-8002-5312e8994a13"
+                ],
+                "loop": [
+                  5,
+                  true
+                ],
+                "volume": [
+                  3,
+                  0.4
+                ],
+                "playOnAwake": [
+                  5,
+                  true
+                ],
+                "mute": [
+                  5,
+                  false
+                ],
+                "destroyWhenStop": [
+                  5,
+                  false
+                ]
+              }
+            }
+          ]
         }
       },
       {
@@ -307,12 +920,12 @@
                   }
                 ],
                 "position": [
-                  0.48581260523350933,
-                  -0.002697392359765943,
-                  742.9552572511026,
-                  520.7455629904819,
-                  742.9552572511026,
-                  520.7455629904819,
+                  0.5101509590809575,
+                  -4.773343692483756e-7,
+                  724.4928392916559,
+                  776.1282528798873,
+                  724.4928392916559,
+                  776.1282528798873,
                   148,
                   317,
                   0,
@@ -3578,16 +4191,16 @@
                         },
                         {
                           "clazz": "qc.kwiki.SwitchSceneButton",
-                          "data": "bd28bd7e-0be3-402a-8076-55f75ab4d61d"
+                          "data": "eed3884b-ead9-4477-a656-8e3b30b0b761"
                         }
                       ],
                       "position": [
                         0,
                         0,
-                        1334.646265878789,
-                        48.385337771596284,
-                        1334.646265878789,
-                        48.385337771596284,
+                        1334,
+                        48,
+                        1334,
+                        48,
                         64,
                         64,
                         0,
@@ -3728,7 +4341,7 @@
                             ],
                             "fontSize": [
                               3,
-                              32
+                              36
                             ],
                             "color": [
                               14,
@@ -4062,12 +4675,12 @@
                           ]
                         }
                       },
-                      "bd28bd7e-0be3-402a-8076-55f75ab4d61d": {
+                      "eed3884b-ead9-4477-a656-8e3b30b0b761": {
                         "class": "qc.kwiki.SwitchSceneButton",
                         "data": {
                           "uuid": [
                             7,
-                            "bd28bd7e-0be3-402a-8076-55f75ab4d61d"
+                            "eed3884b-ead9-4477-a656-8e3b30b0b761"
                           ],
                           "enable": true,
                           "toScene": [
@@ -4127,10 +4740,10 @@
                       "position": [
                         0,
                         0,
-                        941.8901740841701,
-                        866.3460881784159,
-                        941.8901740841701,
-                        866.3460881784159,
+                        32,
+                        58,
+                        32,
+                        58,
                         120,
                         30,
                         0,
@@ -4177,12 +4790,12 @@
                       ],
                       "font": [
                         32,
-                        "Arial",
+                        "\"Lucida Console\", Monaco, monospace",
                         null
                       ],
                       "bold": [
                         5,
-                        false
+                        true
                       ],
                       "fontSize": [
                         3,
@@ -4190,7 +4803,7 @@
                       ],
                       "color": [
                         14,
-                        4278190080
+                        4294967295
                       ],
                       "text": [
                         7,
@@ -4242,7 +4855,7 @@
                       ],
                       "shadowBlur": [
                         3,
-                        10
+                        0
                       ],
                       "shadowOffsetX": [
                         3,
@@ -4254,7 +4867,7 @@
                       ],
                       "enableShadow": [
                         5,
-                        false
+                        true
                       ]
                     },
                     "__json": {
@@ -4355,10 +4968,10 @@
                       "position": [
                         0,
                         0,
-                        941.8901740841751,
-                        814.9118119720945,
-                        941.8901740841751,
-                        814.9118119720945,
+                        32,
+                        16,
+                        32,
+                        16,
                         120,
                         30,
                         0,
@@ -4405,12 +5018,12 @@
                       ],
                       "font": [
                         32,
-                        "Arial",
+                        "\"Lucida Console\", Monaco, monospace",
                         null
                       ],
                       "bold": [
                         5,
-                        false
+                        true
                       ],
                       "fontSize": [
                         3,
@@ -4418,7 +5031,7 @@
                       ],
                       "color": [
                         14,
-                        4278190080
+                        4294967295
                       ],
                       "text": [
                         7,
@@ -4482,7 +5095,7 @@
                       ],
                       "enableShadow": [
                         5,
-                        false
+                        true
                       ]
                     },
                     "__json": {
@@ -4530,6 +5143,405 @@
                             3,
                             0
                           ]
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "class": "qc.Button",
+                    "data": {
+                      "uuid": "5daffdb0-71fe-4355-8dc3-9c5a43d8da7d",
+                      "_prefab": [
+                        7,
+                        "cf60d081-e410-4105-89f4-33ed20f6e406"
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "SoundButton"
+                      ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        false
+                      ],
+                      "alpha": [
+                        3,
+                        1
+                      ],
+                      "visible": [
+                        5,
+                        true
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [
+                        {
+                          "clazz": "qc.TransitionBehaviour",
+                          "data": "e3d990b9-d0cf-4689-ac88-f71cd287e092"
+                        },
+                        {
+                          "clazz": "qc.meteor.SoundButton",
+                          "data": "a6192d39-6daf-4fd7-9e05-427436ea006d"
+                        }
+                      ],
+                      "position": [
+                        0,
+                        0,
+                        1254,
+                        48,
+                        1254,
+                        48,
+                        64,
+                        64,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1.0000000093112098
+                      ],
+                      "scaleY": [
+                        3,
+                        1.0000000093112098
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        true
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": [
+                        {
+                          "class": "qc.UIText",
+                          "data": {
+                            "uuid": "9c9398b1-015d-4ebf-94f9-3b920e1e964a",
+                            "_prefab": [
+                              7,
+                              ""
+                            ],
+                            "__lock": [
+                              5,
+                              null
+                            ],
+                            "name": [
+                              7,
+                              "Text"
+                            ],
+                            "uniqueName": [
+                              7,
+                              ""
+                            ],
+                            "ignoreDestroy": [
+                              5,
+                              false
+                            ],
+                            "alpha": [
+                              3,
+                              1
+                            ],
+                            "visible": [
+                              5,
+                              true
+                            ],
+                            "colorTint": [
+                              14,
+                              16777215
+                            ],
+                            "static": [
+                              5,
+                              false
+                            ],
+                            "scripts": [
+                              {
+                                "clazz": "qc.NodeMask",
+                                "data": "8c8a4942-929d-465f-aca7-d3af4fae2ac8"
+                              }
+                            ],
+                            "position": [
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              64,
+                              64,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1,
+                              1
+                            ],
+                            "scaleX": [
+                              3,
+                              1
+                            ],
+                            "scaleY": [
+                              3,
+                              1
+                            ],
+                            "rotation": [
+                              3,
+                              0
+                            ],
+                            "interactive": [
+                              5,
+                              false
+                            ],
+                            "isFiltersThrough": [
+                              5,
+                              null
+                            ],
+                            "children": [],
+                            "fontFamily": [
+                              3,
+                              0
+                            ],
+                            "alignH": [
+                              3,
+                              2
+                            ],
+                            "alignV": [
+                              3,
+                              2
+                            ],
+                            "font": [
+                              32,
+                              "Arial",
+                              null
+                            ],
+                            "bold": [
+                              5,
+                              false
+                            ],
+                            "fontSize": [
+                              3,
+                              36
+                            ],
+                            "color": [
+                              14,
+                              4278190080
+                            ],
+                            "text": [
+                              7,
+                              "🔊"
+                            ],
+                            "lineSpacing": [
+                              3,
+                              0
+                            ],
+                            "wrap": [
+                              5,
+                              false
+                            ],
+                            "enableGlow": [
+                              5,
+                              false
+                            ],
+                            "startColor": [
+                              14,
+                              4294901760
+                            ],
+                            "endColor": [
+                              14,
+                              4278190080
+                            ],
+                            "gradient": [
+                              5,
+                              false
+                            ],
+                            "stroke": [
+                              14,
+                              4278190080
+                            ],
+                            "strokeThickness": [
+                              3,
+                              0
+                            ],
+                            "glowColor": [
+                              14,
+                              4294901760
+                            ],
+                            "autoSize": [
+                              5,
+                              false
+                            ],
+                            "shadowColor": [
+                              14,
+                              2147483648
+                            ],
+                            "shadowBlur": [
+                              3,
+                              10
+                            ],
+                            "shadowOffsetX": [
+                              3,
+                              3
+                            ],
+                            "shadowOffsetY": [
+                              3,
+                              3
+                            ],
+                            "enableShadow": [
+                              5,
+                              false
+                            ]
+                          },
+                          "__json": {
+                            "8c8a4942-929d-465f-aca7-d3af4fae2ac8": {
+                              "class": "qc.NodeMask",
+                              "data": {
+                                "uuid": [
+                                  7,
+                                  "8c8a4942-929d-465f-aca7-d3af4fae2ac8"
+                                ],
+                                "enable": false,
+                                "checkInField": [
+                                  5,
+                                  false
+                                ],
+                                "minAnchor": [
+                                  24,
+                                  "qc.Point",
+                                  [
+                                    0,
+                                    0
+                                  ]
+                                ],
+                                "maxAnchor": [
+                                  24,
+                                  "qc.Point",
+                                  [
+                                    1,
+                                    1
+                                  ]
+                                ],
+                                "minRotation": [
+                                  3,
+                                  0
+                                ],
+                                "maxRotation": [
+                                  3,
+                                  6.283185307179586
+                                ],
+                                "clipType": [
+                                  3,
+                                  1
+                                ],
+                                "mode": [
+                                  3,
+                                  0
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      ],
+                      "texture": [
+                        10,
+                        "__builtin_resource__",
+                        "__builtin_resource__",
+                        "button.png"
+                      ],
+                      "frame": [
+                        7,
+                        "button.png"
+                      ],
+                      "imageType": [
+                        3,
+                        1
+                      ],
+                      "skewX": [
+                        3,
+                        null
+                      ],
+                      "skewY": [
+                        3,
+                        null
+                      ],
+                      "text": [
+                        18,
+                        "9c9398b1-015d-4ebf-94f9-3b920e1e964a"
+                      ],
+                      "state": [
+                        3,
+                        0
+                      ],
+                      "supportNativeEvent": [
+                        5,
+                        null
+                      ]
+                    },
+                    "__json": {
+                      "e3d990b9-d0cf-4689-ac88-f71cd287e092": {
+                        "class": "qc.TransitionBehaviour",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "e3d990b9-d0cf-4689-ac88-f71cd287e092"
+                          ],
+                          "enable": true,
+                          "target": [
+                            18,
+                            "5daffdb0-71fe-4355-8dc3-9c5a43d8da7d"
+                          ],
+                          "_transition": [
+                            3,
+                            2
+                          ],
+                          "_normalTexture": null,
+                          "_pressedTexture": null,
+                          "_disabledTexture": null,
+                          "_normalColor": [
+                            14,
+                            4294967295
+                          ],
+                          "_pressedColor": [
+                            14,
+                            4291611852
+                          ],
+                          "_disabledColor": [
+                            14,
+                            4291611852
+                          ]
+                        }
+                      },
+                      "a6192d39-6daf-4fd7-9e05-427436ea006d": {
+                        "class": "qc.meteor.SoundButton",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "a6192d39-6daf-4fd7-9e05-427436ea006d"
+                          ],
+                          "enable": true
                         }
                       }
                     }
@@ -5173,6 +6185,26 @@
     ]
   },
   "dependences": {
+    "b13126da-d3d8-4637-bb4a-d948abfbc6d8": {
+      "key": "Assets/texture/deep-space.bin",
+      "uuid": "b13126da-d3d8-4637-bb4a-d948abfbc6d8"
+    },
+    "9f5c32aa-636c-4267-83e9-a6ff072abd04": {
+      "key": "Assets/audio/explosion.mp3.bin",
+      "uuid": "9f5c32aa-636c-4267-83e9-a6ff072abd04"
+    },
+    "a89bb759-5646-4fde-bd21-122a5bc4d72c": {
+      "key": "Assets/audio/shoot.mp3.bin",
+      "uuid": "a89bb759-5646-4fde-bd21-122a5bc4d72c"
+    },
+    "af79344c-3728-4876-9c43-d72c142288bf": {
+      "key": "Assets/audio/restore.mp3.bin",
+      "uuid": "af79344c-3728-4876-9c43-d72c142288bf"
+    },
+    "c0f00857-6162-4f67-8002-5312e8994a13": {
+      "key": "Assets/audio/background-loop.mp3.bin",
+      "uuid": "c0f00857-6162-4f67-8002-5312e8994a13"
+    },
     "3d26ed8e-5dd3-4518-9fa7-ff7c5a03631c": {
       "key": "Assets/sprite/rocketship.bin",
       "uuid": "3d26ed8e-5dd3-4518-9fa7-ff7c5a03631c"

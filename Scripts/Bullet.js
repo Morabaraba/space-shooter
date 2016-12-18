@@ -22,7 +22,7 @@ Bullet.prototype.onOverlap = function(o1, asteroid) {
     var self = this;
     var explode = self.game.world.find('/UIRoot/explode');
     explode = self.game.add.clone(explode);
-
+	self.game.add.clone(self.game.world.find('/Sounds/Explosion')).play();
     
     explode.x = o1.x;
     explode.y = o1.y;
@@ -41,9 +41,9 @@ Bullet.prototype.onOverlap = function(o1, asteroid) {
         asteroidsDetroyed += 1;
     }
     self.game.storage.set('asteroidsDetroyed', asteroidsDetroyed);
-    self.game.storage.save();
+    //self.game.storage.save();
     var asteroidsDetroyedText = self.game.world.find('/UIRoot/ui/Asteroids-Destroyed');
-    asteroidsDetroyedText.text = 'Asteroids Destroyed:' + asteroidsDetroyed;
+    asteroidsDetroyedText.text = '' + asteroidsDetroyed;
     
     self.destroy();
     
