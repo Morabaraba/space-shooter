@@ -5,13 +5,14 @@ var FallingMeteor = qc.defineBehaviour('qc.meteor.FallingMeteor', qc.Behaviour, 
     this.showingDamage = false;
 }, {
     // fields need to be serialized
+    rocketShip : qc.Serializer.NODE 
 });
 
 // Called when the script instance is being loaded.
 FallingMeteor.prototype.awake = function() {
     var self = this;
 	self.body = self.getScript('qc.arcade.RigidBody');
-    self.rocketShip = self.game.world.find('/UIRoot/rocketship');
+    self.rocketShip = self.rocketShip || self.game.world.find('/UIRoot/rocketship');
     self.body.addOverlap( self.rocketShip );
     // create body if it does not exist TODO
 };
@@ -32,12 +33,11 @@ FallingMeteor.prototype.restartPos = function() {
     var parentObj = self.gameObject.parent;
 	self.gameObject.y = -rnd.integerInRange(100, 500);
     self.gameObject.x = rnd.integerInRange(0, parentObj.width);
+    self.gameObject.scaleX = 1.25  + ( rnd.integerInRange(0, 100) / 100);
+    self.gameObject.scaleY = self.gameObject.scaleX;
+
     self.body.velocity.x = rnd.integerInRange(-450,450);
  };
-
-FallingMeteor.prototype.onCollide = function(o1, o2) {
-    console.log('Collide', o1, o2);
-};
 
 FallingMeteor.prototype.onOverlap = function(o1, o2) {
     //console.log('onOverlap', o1, o2);
@@ -45,7 +45,6 @@ FallingMeteor.prototype.onOverlap = function(o1, o2) {
     var explode = self.game.world.find('/UIRoot/explode');
     explode = self.game.add.clone(explode);
 
-    
     explode.x = o1.x;
     explode.y = o1.y;
     explode.onFinished = function() {
@@ -65,23 +64,14 @@ FallingMeteor.prototype.onOverlap = function(o1, o2) {
         });
                             
         var shieldHits = self.game.storage.get('shieldHits');
-        if (!shieldHits) {
-            shieldHits = 1;
-        } else {
-            shieldHits += 1;
-        }
+        shieldHits -= 1;
         self.game.storage.set('shieldHits', shieldHits);
-        //self.game.storage.save();
-        var shieldHitsText = self.game.world.find('/UIRoot/ui/shield-hits');
-        shieldHitsText.text = '' + shieldHits;
 
         self.rocketShip.getScript('qc.TweenAlpha').enable=true;
         this.game.timer.add(1500, function() {
             self.rocketShip.getScript('qc.TweenAlpha').enable=false;
             self.rocketShip.alpha = 1;
             self.showingDamage = false;
-            
         });
     }
-
 };

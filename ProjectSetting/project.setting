@@ -1,18 +1,18 @@
 {
   "projectName": "MeteorEscape",
-  "gameName": "MeteorEscape",
+  "gameName": "Asteroid Dodge: Quick Space Shooter",
   "companyName": "openhazel",
   "gameInstance": "qc_game",
   "frameRate": {
     "mobile": 30,
-    "desktop": 60
+    "desktop": "60"
   },
   "fixedGameSize": {
     "enabled": true,
     "width": 1440,
     "height": 960
   },
-  "backgroundColor": 4671303,
+  "backgroundColor": 0,
   "runInBackground": false,
   "antialias": true,
   "renderer": "Auto",
@@ -25,7 +25,7 @@
   "toolFlag": 508,
   "version": "1",
   "loading": "",
-  "localStorageID": "com.openhazel.kwiki.meteorescape",
+  "localStorageID": "com.openhazel.space-shooter",
   "resolutionRatio": 0.25,
   "publish": {
     "android": "build/android",

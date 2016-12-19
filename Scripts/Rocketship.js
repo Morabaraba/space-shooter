@@ -7,12 +7,13 @@ var Rocketship = qc.defineBehaviour('qc.engine.Rocketship', qc.Behaviour, functi
     this.bulletRoot = null;
     this.bulletPrefab = null;
     this._fireTime = 0;    
-    this.bulletCount = 10;
 }, {
     // fields need to be serialized
     velocity: qc.Serializer.INT,
     bulletRoot: qc.Serializer.NODE,
-    bulletPrefab: qc.Serializer.NODE
+    bulletPrefab: qc.Serializer.NODE,
+    explosionSound : qc.Serializer.NODE,
+    explosionAnimation : qc.Serializer.NODE    
 });
 
 // Called when the script instance is being loaded.
@@ -50,16 +51,18 @@ Rocketship.prototype.fire = function() {
     var self = this,
         rigidbody = this.getScript('qc.arcade.RigidBody');
     if (self.game.time.now - self._fireTime < 200) return;
-    if (this.bulletCount < 1) return;
     
-    this.bulletCount = this.bulletCount - 1;
-    
-    var bcText = self.game.world.find('/UIRoot/ui/BulletCount');
-    bcText.text = '' + this.bulletCount;
-    
+    this.bulletCount = self.game.storage.get('bulletCount');
+    if (!this.bulletCount || this.bulletCount < 1) return;
+    self.game.storage.set('bulletCount', this.bulletCount - 1);
+
     self._fireTime = self.game.time.now;
     
     var bullet = self.game.add.clone(self.bulletPrefab, self.bulletRoot);
+    var bulletScript = bullet.getScript('qc.engine.Bullet');
+    bulletScript.explosionSound = self.explosionSound;
+    bulletScript.explosionAnimation = self.explosionAnimation;
+    
     bullet.x = self.gameObject.x;
     bullet.y = self.gameObject.y;
     bullet.rotation = self.gameObject.rotation;
@@ -79,4 +82,13 @@ Rocketship.prototype.fire = function() {
     self.game.add.clone(self.game.world.find('/Sounds/Shoot')).play();
 };
 
+Rocketship.prototype.onClick = function(event) {
+    // double click?
+    if (event.isDoubleTap) {
+        this.fire();
+    }
+    else if (event.isDoubleClick) {
+        this.fire();
+    }
+};
 

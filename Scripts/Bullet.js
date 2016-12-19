@@ -4,6 +4,8 @@ var Bullet = qc.defineBehaviour('qc.engine.Bullet', qc.Behaviour, function() {
     //this.runInEditor = true;
 }, {
     // fields need to be serialized
+    explosionSound : qc.Serializer.NODE,
+    explosionAnimation : qc.Serializer.NODE
 });
 
 // Called when the script instance is being loaded.
@@ -17,12 +19,12 @@ var Bullet = qc.defineBehaviour('qc.engine.Bullet', qc.Behaviour, function() {
 //};
 
 Bullet.prototype.onOverlap = function(o1, asteroid) {
-    console.log('bullet onOverlap', o1, asteroid);
+    //console.log('bullet onOverlap', o1, asteroid);
     
     var self = this;
-    var explode = self.game.world.find('/UIRoot/explode');
+    var explode = self.explosionAnimation; //self.game.world.find('/UIRoot/explode');
     explode = self.game.add.clone(explode);
-	self.game.add.clone(self.game.world.find('/Sounds/Explosion')).play();
+	self.game.add.clone(self.explosionSound).play();
     
     explode.x = o1.x;
     explode.y = o1.y;
@@ -41,9 +43,6 @@ Bullet.prototype.onOverlap = function(o1, asteroid) {
         asteroidsDetroyed += 1;
     }
     self.game.storage.set('asteroidsDetroyed', asteroidsDetroyed);
-    //self.game.storage.save();
-    var asteroidsDetroyedText = self.game.world.find('/UIRoot/ui/Asteroids-Destroyed');
-    asteroidsDetroyedText.text = '' + asteroidsDetroyed;
     
     self.destroy();
     

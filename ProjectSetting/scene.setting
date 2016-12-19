@@ -2,7 +2,8 @@
   "scene": [
     "Assets/scene/menus/menu",
     "Assets/scene/game",
-    "Assets/scene/menus/about"
+    "Assets/scene/menus/about",
+    "Assets/scene/game_redirect"
   ],
   "entryScene": "Assets/scene/menus/menu"
 }
