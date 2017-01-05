@@ -3,7 +3,8 @@
     "Assets/scene/menus/menu",
     "Assets/scene/game",
     "Assets/scene/menus/about",
-    "Assets/scene/game_redirect"
+    "Assets/scene/game_redirect",
+    "Assets/scene/new_highscore"
   ],
   "entryScene": "Assets/scene/menus/menu"
 }

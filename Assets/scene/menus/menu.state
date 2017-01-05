@@ -41,10 +41,10 @@
     "position": [
       0,
       0,
-      235.75518672199166,
-      1.1701244813277754,
-      235.75518672199166,
-      1.1701244813277754,
+      211.85477178423236,
+      1.236514522821551,
+      211.85477178423236,
+      1.236514522821551,
       1440,
       960,
       0,
@@ -58,11 +58,11 @@
     ],
     "scaleX": [
       3,
-      0.5850622406639004
+      0.6182572614107884
     ],
     "scaleY": [
       3,
-      0.5850622406639004
+      0.6182572614107884
     ],
     "rotation": [
       3,
@@ -311,10 +311,10 @@
           "position": [
             0,
             0,
-            -206.42916433563792,
-            -237.13832256321325,
-            -206.42916433563792,
-            -237.13832256321325,
+            -185.40231869805154,
+            -224.1987252477775,
+            -185.40231869805154,
+            -224.1987252477775,
             512,
             512,
             0,
@@ -412,6 +412,10 @@
             {
               "clazz": "qc.ScaleAdapter",
               "data": "123adeb3-83a1-4665-88cc-478b248a61c2"
+            },
+            {
+              "clazz": "qc.engine.InitMenu",
+              "data": "9d95bf36-f8de-4120-ba03-9d15bd9542d1"
             }
           ],
           "position": [
@@ -527,7 +531,7 @@
                 ],
                 "rotation": [
                   3,
-                  1.3100441365469457
+                  4.464203160751097
                 ],
                 "interactive": [
                   5,
@@ -1231,7 +1235,7 @@
                 ],
                 "name": [
                   7,
-                  "ui"
+                  "UI"
                 ],
                 "uniqueName": [
                   7,
@@ -3245,6 +3249,606 @@
                         }
                       }
                     }
+                  },
+                  {
+                    "class": "qc.UIText",
+                    "data": {
+                      "uuid": "3a26b0c6-e764-4086-b055-a6493db895d4",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "Highscore"
+                      ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        false
+                      ],
+                      "alpha": [
+                        3,
+                        1
+                      ],
+                      "visible": [
+                        5,
+                        true
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [
+                        {
+                          "clazz": "qc.NodeMask",
+                          "data": "bd2a802f-7a29-4ac5-bcf2-a394fafc37b4"
+                        },
+                        {
+                          "clazz": "qc.TweenRotation",
+                          "data": "647d931b-e13e-4da3-9647-9df2689e6e9b"
+                        }
+                      ],
+                      "position": [
+                        -8.188170361488725,
+                        -0.7279728806676057,
+                        -806.4616068762218,
+                        379.0629996606837,
+                        -806.4616068762218,
+                        379.0629996606837,
+                        120,
+                        30,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1
+                      ],
+                      "scaleY": [
+                        3,
+                        1
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        false
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": [],
+                      "fontFamily": [
+                        3,
+                        0
+                      ],
+                      "alignH": [
+                        3,
+                        2
+                      ],
+                      "alignV": [
+                        3,
+                        2
+                      ],
+                      "font": [
+                        32,
+                        "Arial Black",
+                        null
+                      ],
+                      "bold": [
+                        5,
+                        true
+                      ],
+                      "fontSize": [
+                        3,
+                        48
+                      ],
+                      "color": [
+                        14,
+                        4294967295
+                      ],
+                      "text": [
+                        7,
+                        "Highscore"
+                      ],
+                      "lineSpacing": [
+                        3,
+                        0
+                      ],
+                      "wrap": [
+                        5,
+                        false
+                      ],
+                      "enableGlow": [
+                        5,
+                        false
+                      ],
+                      "startColor": [
+                        14,
+                        4294901760
+                      ],
+                      "endColor": [
+                        14,
+                        4278190080
+                      ],
+                      "gradient": [
+                        5,
+                        false
+                      ],
+                      "stroke": [
+                        14,
+                        4278190080
+                      ],
+                      "strokeThickness": [
+                        3,
+                        0
+                      ],
+                      "glowColor": [
+                        14,
+                        4294901760
+                      ],
+                      "autoSize": [
+                        5,
+                        false
+                      ],
+                      "shadowColor": [
+                        14,
+                        2147483648
+                      ],
+                      "shadowBlur": [
+                        3,
+                        0
+                      ],
+                      "shadowOffsetX": [
+                        3,
+                        3
+                      ],
+                      "shadowOffsetY": [
+                        3,
+                        3
+                      ],
+                      "enableShadow": [
+                        5,
+                        false
+                      ]
+                    },
+                    "__json": {
+                      "bd2a802f-7a29-4ac5-bcf2-a394fafc37b4": {
+                        "class": "qc.NodeMask",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "bd2a802f-7a29-4ac5-bcf2-a394fafc37b4"
+                          ],
+                          "enable": false,
+                          "checkInField": [
+                            5,
+                            false
+                          ],
+                          "minAnchor": [
+                            24,
+                            "qc.Point",
+                            [
+                              0,
+                              0
+                            ]
+                          ],
+                          "maxAnchor": [
+                            24,
+                            "qc.Point",
+                            [
+                              1,
+                              1
+                            ]
+                          ],
+                          "minRotation": [
+                            3,
+                            0
+                          ],
+                          "maxRotation": [
+                            3,
+                            6.283185307179586
+                          ],
+                          "clipType": [
+                            3,
+                            1
+                          ],
+                          "mode": [
+                            3,
+                            0
+                          ]
+                        }
+                      },
+                      "647d931b-e13e-4da3-9647-9df2689e6e9b": {
+                        "class": "qc.TweenRotation",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "647d931b-e13e-4da3-9647-9df2689e6e9b"
+                          ],
+                          "enable": false,
+                          "_curve": [
+                            22,
+                            "qc.BezierCurve",
+                            [
+                              [
+                                0,
+                                0,
+                                1,
+                                1
+                              ],
+                              [
+                                1,
+                                1,
+                                1,
+                                1
+                              ],
+                              [
+                                0,
+                                0
+                              ]
+                            ]
+                          ],
+                          "sampleMethod": [
+                            3,
+                            0
+                          ],
+                          "style": [
+                            3,
+                            0
+                          ],
+                          "delay": [
+                            3,
+                            0
+                          ],
+                          "duration": [
+                            3,
+                            1
+                          ],
+                          "tweenGroup": [
+                            3,
+                            0
+                          ],
+                          "flag": [
+                            7,
+                            ""
+                          ],
+                          "playOnAwake": [
+                            5,
+                            true
+                          ],
+                          "from": [
+                            3,
+                            -1.5707963267948966
+                          ],
+                          "to": [
+                            3,
+                            0
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "class": "qc.UIText",
+                    "data": {
+                      "uuid": "1c261226-90f7-444c-b659-3e94967238a8",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "HighscoreNames"
+                      ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        false
+                      ],
+                      "alpha": [
+                        3,
+                        1
+                      ],
+                      "visible": [
+                        5,
+                        true
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [
+                        {
+                          "clazz": "qc.NodeMask",
+                          "data": "bd2a802f-7a29-4ac5-bcf2-a394fafc37b4"
+                        },
+                        {
+                          "clazz": "qc.TweenRotation",
+                          "data": "647d931b-e13e-4da3-9647-9df2689e6e9b"
+                        }
+                      ],
+                      "position": [
+                        -8.188170361488725,
+                        -0.7279728806676057,
+                        -838.8105993829085,
+                        442.14353504873463,
+                        -838.8105993829085,
+                        442.14353504873463,
+                        120,
+                        30,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1
+                      ],
+                      "scaleY": [
+                        3,
+                        1
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        false
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": [],
+                      "fontFamily": [
+                        3,
+                        0
+                      ],
+                      "alignH": [
+                        3,
+                        0
+                      ],
+                      "alignV": [
+                        3,
+                        0
+                      ],
+                      "font": [
+                        32,
+                        "Arial Black",
+                        null
+                      ],
+                      "bold": [
+                        5,
+                        true
+                      ],
+                      "fontSize": [
+                        3,
+                        28
+                      ],
+                      "color": [
+                        14,
+                        4294967295
+                      ],
+                      "text": [
+                        7,
+                        "1. Can't (60/60=1kps)\n2. Touch\n3. This"
+                      ],
+                      "lineSpacing": [
+                        3,
+                        0
+                      ],
+                      "wrap": [
+                        5,
+                        false
+                      ],
+                      "enableGlow": [
+                        5,
+                        false
+                      ],
+                      "startColor": [
+                        14,
+                        4294901760
+                      ],
+                      "endColor": [
+                        14,
+                        4278190080
+                      ],
+                      "gradient": [
+                        5,
+                        false
+                      ],
+                      "stroke": [
+                        14,
+                        4278190080
+                      ],
+                      "strokeThickness": [
+                        3,
+                        0
+                      ],
+                      "glowColor": [
+                        14,
+                        4294901760
+                      ],
+                      "autoSize": [
+                        5,
+                        false
+                      ],
+                      "shadowColor": [
+                        14,
+                        2147483648
+                      ],
+                      "shadowBlur": [
+                        3,
+                        0
+                      ],
+                      "shadowOffsetX": [
+                        3,
+                        3
+                      ],
+                      "shadowOffsetY": [
+                        3,
+                        3
+                      ],
+                      "enableShadow": [
+                        5,
+                        false
+                      ]
+                    },
+                    "__json": {
+                      "bd2a802f-7a29-4ac5-bcf2-a394fafc37b4": {
+                        "class": "qc.NodeMask",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "bd2a802f-7a29-4ac5-bcf2-a394fafc37b4"
+                          ],
+                          "enable": false,
+                          "checkInField": [
+                            5,
+                            false
+                          ],
+                          "minAnchor": [
+                            24,
+                            "qc.Point",
+                            [
+                              0,
+                              0
+                            ]
+                          ],
+                          "maxAnchor": [
+                            24,
+                            "qc.Point",
+                            [
+                              1,
+                              1
+                            ]
+                          ],
+                          "minRotation": [
+                            3,
+                            0
+                          ],
+                          "maxRotation": [
+                            3,
+                            6.283185307179586
+                          ],
+                          "clipType": [
+                            3,
+                            1
+                          ],
+                          "mode": [
+                            3,
+                            0
+                          ]
+                        }
+                      },
+                      "647d931b-e13e-4da3-9647-9df2689e6e9b": {
+                        "class": "qc.TweenRotation",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "647d931b-e13e-4da3-9647-9df2689e6e9b"
+                          ],
+                          "enable": false,
+                          "_curve": [
+                            22,
+                            "qc.BezierCurve",
+                            [
+                              [
+                                0,
+                                0,
+                                1,
+                                1
+                              ],
+                              [
+                                1,
+                                1,
+                                1,
+                                1
+                              ],
+                              [
+                                0,
+                                0
+                              ]
+                            ]
+                          ],
+                          "sampleMethod": [
+                            3,
+                            0
+                          ],
+                          "style": [
+                            3,
+                            0
+                          ],
+                          "delay": [
+                            3,
+                            0
+                          ],
+                          "duration": [
+                            3,
+                            1
+                          ],
+                          "tweenGroup": [
+                            3,
+                            0
+                          ],
+                          "flag": [
+                            7,
+                            ""
+                          ],
+                          "playOnAwake": [
+                            5,
+                            true
+                          ],
+                          "from": [
+                            3,
+                            -1.5707963267948966
+                          ],
+                          "to": [
+                            3,
+                            0
+                          ]
+                        }
+                      }
+                    }
                   }
                 ]
               }
@@ -3286,6 +3890,16 @@
                   960
                 ]
               ]
+            }
+          },
+          "9d95bf36-f8de-4120-ba03-9d15bd9542d1": {
+            "class": "qc.engine.InitMenu",
+            "data": {
+              "uuid": [
+                7,
+                "9d95bf36-f8de-4120-ba03-9d15bd9542d1"
+              ],
+              "enable": true
             }
           }
         }

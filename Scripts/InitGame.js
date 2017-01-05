@@ -25,7 +25,7 @@ InitGame.prototype.awake = function() {
 // Called every frame, if the behaviour is enabled.
 InitGame.prototype.update = function() {
     var self = this;
-    
+    if (self.gameOver) return;
     var shieldHits = self.game.storage.get('shieldHits') || 0;
     if (shieldHits < 1 && !self.gameOver) {
         self.gameOver = true;
@@ -38,6 +38,13 @@ InitGame.prototype.update = function() {
         self.game.world.find('/UIRoot/UI/GameOver').getScript('qc.TweenAlpha').play();
         self.game.world.find('/UIRoot/UI/GameOver/GameOver').getScript('qc.TweenAlpha').play();
         self.game.world.find('/UIRoot/UI/GameOver/PlayAgain').getScript('qc.TweenAlpha').play();
+        
+        var highscore = this.game.storage.get('highscore');
+        highscore.push({ name : 'Player1', 
+                        kills: self.game.storage.get('asteroidsDetroyed') , 
+                        time: +((this.game.time.now - this.startedAt) / 1000).toFixed(2) });
+        this.game.storage.set('highscore', highscore);
+        this.game.storage.save();
     }
     
     if (!self.gameOver) {
