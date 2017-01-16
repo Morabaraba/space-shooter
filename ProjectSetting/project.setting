@@ -12,8 +12,8 @@
     "width": 1440,
     "height": 960
   },
-  "backgroundColor": 0,
-  "runInBackground": false,
+  "backgroundColor": 4282861383,
+  "runInBackground": true,
   "antialias": true,
   "renderer": "Auto",
   "transparent": false,

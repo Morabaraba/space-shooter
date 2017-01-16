@@ -17,9 +17,15 @@ var Rocketship = qc.defineBehaviour('qc.engine.Rocketship', qc.Behaviour, functi
 });
 
 // Called when the script instance is being loaded.
-//Rocketship.prototype.awake = function() {
-//
-//};
+Rocketship.prototype.awake = function() {
+	 this.addListener(this.game.input.onKeyUp, this.doOnKeyUp, this);
+};
+
+
+Rocketship.prototype.doOnKeyUp = function() {
+    var rigidBody = this.getScript('qc.arcade.RigidBody');
+    rigidBody.velocity.setTo(0, 0);
+};
 
 // Called every frame, if the behaviour is enabled.
 Rocketship.prototype.update = function() {
@@ -39,7 +45,7 @@ Rocketship.prototype.update = function() {
         rigidBody.velocity.x = self.velocity;
     }
     else {
-        rigidBody.velocity.setTo(0, 0);
+        //rigidBody.velocity.setTo(0, 0);
     }
     
     if (self.game.input.isKeyDown(qc.Keyboard.SPACEBAR)) {

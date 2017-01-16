@@ -27,6 +27,8 @@ InitGame.prototype.update = function() {
     var self = this;
     if (self.gameOver) return;
     var shieldHits = self.game.storage.get('shieldHits') || 0;
+    
+    return;
     if (shieldHits < 1 && !self.gameOver) {
         self.gameOver = true;
         //self.rocketShip.visible = false;
