@@ -1328,11 +1328,11 @@
                         10,
                         "Assets/atlas/shield.bin",
                         "b6f54576-0ad1-4ef7-9d78-c74f399a6db0",
-                        "sprite5"
+                        "sprite6"
                       ],
                       "frame": [
                         7,
-                        "sprite5"
+                        "sprite6"
                       ],
                       "defaultAnimation": [
                         7,
@@ -8394,8 +8394,8 @@
                     "data": "64156819-9a52-476a-a11b-1c0de505f82c"
                   },
                   {
-                    "clazz": "qc.engine.OnDrag",
-                    "data": "30e8c61d-55d6-4f5e-bc08-db781d066812"
+                    "clazz": "qc.engine.FollowPointer",
+                    "data": "6917320e-b9ac-4ac8-ae6f-e6bedf6c79e0"
                   }
                 ],
                 "position": [
@@ -8686,15 +8686,14 @@
                     ]
                   }
                 },
-                "30e8c61d-55d6-4f5e-bc08-db781d066812": {
-                  "class": "qc.engine.OnDrag",
+                "6917320e-b9ac-4ac8-ae6f-e6bedf6c79e0": {
+                  "class": "qc.engine.FollowPointer",
                   "data": {
                     "uuid": [
                       7,
-                      "30e8c61d-55d6-4f5e-bc08-db781d066812"
+                      "6917320e-b9ac-4ac8-ae6f-e6bedf6c79e0"
                     ],
-                    "enable": true,
-                    "ball": null
+                    "enable": true
                   }
                 }
               }
@@ -8798,6 +8797,242 @@
                   3,
                   null
                 ]
+              }
+            },
+            {
+              "class": "qc.UIImage",
+              "data": {
+                "uuid": "5b7695a0-7f0e-4329-9b9b-846b5e8e9439",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "FireButtonL"
+                ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [
+                  {
+                    "clazz": "qc.engine.BulletButton",
+                    "data": "13b233dc-b574-44e5-aea0-ebf0c3ea6e1a"
+                  }
+                ],
+                "position": [
+                  0,
+                  0,
+                  100.51677852349513,
+                  720.9999999999897,
+                  100.51677852349513,
+                  720.9999999999897,
+                  29,
+                  29,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  6
+                ],
+                "scaleY": [
+                  3,
+                  6
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  true
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": [],
+                "texture": [
+                  10,
+                  "Assets/sprite/bullet.bin",
+                  "994c06be-e568-4dc4-8b91-a8a197ad870f",
+                  0
+                ],
+                "frame": null,
+                "imageType": [
+                  3,
+                  0
+                ],
+                "skewX": [
+                  3,
+                  null
+                ],
+                "skewY": [
+                  3,
+                  null
+                ]
+              },
+              "__json": {
+                "13b233dc-b574-44e5-aea0-ebf0c3ea6e1a": {
+                  "class": "qc.engine.BulletButton",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "13b233dc-b574-44e5-aea0-ebf0c3ea6e1a"
+                    ],
+                    "enable": true
+                  }
+                }
+              }
+            },
+            {
+              "class": "qc.UIImage",
+              "data": {
+                "uuid": "ad364364-4f7d-494f-955c-0d2c90c01eff",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "FireButtonR"
+                ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [
+                  {
+                    "clazz": "qc.engine.BulletButton",
+                    "data": "13b233dc-b574-44e5-aea0-ebf0c3ea6e1a"
+                  }
+                ],
+                "position": [
+                  0,
+                  0,
+                  1176.1208053691612,
+                  719.3825503355579,
+                  1176.1208053691612,
+                  719.3825503355579,
+                  29,
+                  29,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  6
+                ],
+                "scaleY": [
+                  3,
+                  6
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  true
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": [],
+                "texture": [
+                  10,
+                  "Assets/sprite/bullet.bin",
+                  "994c06be-e568-4dc4-8b91-a8a197ad870f",
+                  0
+                ],
+                "frame": null,
+                "imageType": [
+                  3,
+                  0
+                ],
+                "skewX": [
+                  3,
+                  null
+                ],
+                "skewY": [
+                  3,
+                  null
+                ]
+              },
+              "__json": {
+                "13b233dc-b574-44e5-aea0-ebf0c3ea6e1a": {
+                  "class": "qc.engine.BulletButton",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "13b233dc-b574-44e5-aea0-ebf0c3ea6e1a"
+                    ],
+                    "enable": true
+                  }
+                }
               }
             }
           ]
