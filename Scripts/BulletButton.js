@@ -17,12 +17,8 @@ var BulletButton = qc.defineBehaviour('qc.engine.BulletButton', qc.Behaviour, fu
 //};
 
 BulletButton.prototype.onClick = function(event) {
-    // double click?
     var rocketScript = this.game.world.find('/UIRoot/rocketship').getScript('qc.engine.Rocketship');
-    if (event.isDoubleTap) {
-        rocketScript.fire();
-    }
-    else if (event.isDoubleClick) {
-        rocketScript.fire();
-    }
+
+    rocketScript.fire();
+    
 };

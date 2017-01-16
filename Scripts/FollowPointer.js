@@ -17,8 +17,8 @@ FollowPointer.prototype.awake = function() {
 };
 
 FollowPointer.prototype.doOnMove = function(id, x, y) {
-    this.getScript('qc.arcade.RigidBody').moveToObject({x: x, y: y}, 400);
-	console.log('FollowPointer Moving', {x: x, y: y});
+    this.getScript('qc.arcade.RigidBody').moveToObject({x: x, y: y}, 800);
+	//console.log('FollowPointer Moving', {x: x, y: y});
     this._onMove = true;
     this._pointerX = x;
     this._pointerY = y;
@@ -33,8 +33,14 @@ FollowPointer.prototype.update = function() {
 
     var rw = ob.width;
     var rh = ob.height;
-
+/*
     if (qc.Rectangle.containsRaw(ob.x - rw / 2, ob.y - rh / 2, rw, rh, this._pointerX, this._pointerY)) {
+        // 停止下来
+        // stop it
+        this.getScript('qc.arcade.RigidBody').velocity.setTo(0, 0);
+    };
+*/
+    if (qc.Rectangle.containsRaw(ob.x - rw / 2 , ob.y , rw, rh, this._pointerX, this._pointerY)) {
         // 停止下来
         // stop it
         this.getScript('qc.arcade.RigidBody').velocity.setTo(0, 0);

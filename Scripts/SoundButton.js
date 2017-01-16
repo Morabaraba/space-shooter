@@ -4,9 +4,9 @@ var SoundButton = qc.defineBehaviour('qc.meteor.SoundButton', qc.Behaviour, func
     //this.runInEditor = true;
 	this.soundOffText = '🔈';
     this.soundOnText = '🔊'; 
-    //if (this.game.storage.get('playSound') === undefined) {
-    //    this.game.storage.set('playSound', true);
-    // }
+    if (this.game.storage.get('playSound') === undefined) {
+        this.game.storage.set('playSound', true);
+     }
     this.playSound = this.game.storage.get('playSound');
     var self = this;
     this.addListener(this.gameObject.onClick, function() {
