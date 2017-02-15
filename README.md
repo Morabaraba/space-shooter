@@ -1,4 +1,4 @@
-# space-shooter #
+# Space-shooter #
 
 [Play(WIP)](http://openhazel.co.za/games/space-shooter/)
 
@@ -12,6 +12,6 @@ I'm toying around with QICI to see how easy/hard it is to develop games.
 - Clone repo `git clone git@bitbucket.org:ludoza/space-shooter.git`
 - Open the cloned folder using QICI.
 
-### Contribution guidelines ###
+### License ###
 
 MIT
