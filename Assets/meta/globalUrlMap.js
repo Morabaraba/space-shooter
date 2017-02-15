@@ -6,6 +6,7 @@ urlMapConfig = {
   "649bbcdc-c2d6-44c8-a21d-ff0d0051a73e": "Assets/audio/powerup.mp3.bin",
   "af79344c-3728-4876-9c43-d72c142288bf": "Assets/audio/restore.mp3.bin",
   "a89bb759-5646-4fde-bd21-122a5bc4d72c": "Assets/audio/shoot.mp3.bin",
+  "6c156c26-7149-4ab2-aa4f-3f688803bafd": "Assets/prefab/Loading.bin",
   "cf60d081-e410-4105-89f4-33ed20f6e406": "Assets/prefab/SoundButton.bin",
   "f116cbeb-00ba-44d8-99e7-e2d3d5ec0933": "Assets/scene/game.bin",
   "e4508b42-f569-44e9-8703-21ef8d2e7d03": "Assets/scene/game_redirect.bin",

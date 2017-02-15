@@ -41,10 +41,10 @@
     "position": [
       0,
       0,
-      62.22821576763482,
-      0.9854771784232241,
-      62.22821576763482,
-      0.9854771784232241,
+      141.71576763485479,
+      0.9771784232365235,
+      141.71576763485479,
+      0.9771784232365235,
       1440,
       960,
       0,
@@ -58,11 +58,11 @@
     ],
     "scaleX": [
       3,
-      0.4927385892116183
+      0.48858921161825725
     ],
     "scaleY": [
       3,
-      0.4927385892116183
+      0.48858921161825725
     ],
     "rotation": [
       3,
@@ -156,109 +156,7 @@
             5,
             null
           ],
-          "children": [
-            {
-              "class": "qc.UIImage",
-              "data": {
-                "uuid": "eee20130-ecb1-4a25-834f-8eb2b3c9f885",
-                "_prefab": [
-                  7,
-                  ""
-                ],
-                "__lock": [
-                  5,
-                  null
-                ],
-                "name": [
-                  7,
-                  "bg"
-                ],
-                "uniqueName": [
-                  7,
-                  ""
-                ],
-                "ignoreDestroy": [
-                  5,
-                  false
-                ],
-                "alpha": [
-                  3,
-                  1
-                ],
-                "visible": [
-                  5,
-                  true
-                ],
-                "colorTint": [
-                  14,
-                  16777215
-                ],
-                "static": [
-                  5,
-                  false
-                ],
-                "scripts": [],
-                "position": [
-                  0,
-                  0,
-                  -47.102941455778364,
-                  -298.01473893632897,
-                  -47.102941455778364,
-                  -298.01473893632897,
-                  512,
-                  512,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "scaleX": [
-                  3,
-                  3.0648660335805142
-                ],
-                "scaleY": [
-                  3,
-                  3.0648660335805142
-                ],
-                "rotation": [
-                  3,
-                  0
-                ],
-                "interactive": [
-                  5,
-                  false
-                ],
-                "isFiltersThrough": [
-                  5,
-                  null
-                ],
-                "children": [],
-                "texture": [
-                  10,
-                  "Assets/texture/deep-space.bin",
-                  "b13126da-d3d8-4637-bb4a-d948abfbc6d8",
-                  0
-                ],
-                "frame": null,
-                "imageType": [
-                  3,
-                  0
-                ],
-                "skewX": [
-                  3,
-                  null
-                ],
-                "skewY": [
-                  3,
-                  null
-                ]
-              }
-            }
-          ]
+          "children": []
         }
       },
       {
@@ -893,7 +791,7 @@
           ],
           "name": [
             7,
-            "UIRoot"
+            "GameRoot"
           ],
           "uniqueName": [
             7,
@@ -973,6 +871,107 @@
           ],
           "children": [
             {
+              "class": "qc.UIImage",
+              "data": {
+                "uuid": "eee20130-ecb1-4a25-834f-8eb2b3c9f885",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "bg"
+                ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [],
+                "position": [
+                  0,
+                  0,
+                  -47.10294688464947,
+                  -298.01475802547293,
+                  -47.10294688464947,
+                  -298.01475802547293,
+                  512,
+                  512,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  3.0648662312249595
+                ],
+                "scaleY": [
+                  3,
+                  3.0648662312249595
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": [],
+                "texture": [
+                  10,
+                  "Assets/texture/deep-space.bin",
+                  "b13126da-d3d8-4637-bb4a-d948abfbc6d8",
+                  0
+                ],
+                "frame": null,
+                "imageType": [
+                  3,
+                  0
+                ],
+                "skewX": [
+                  3,
+                  null
+                ],
+                "skewY": [
+                  3,
+                  null
+                ]
+              }
+            },
+            {
               "class": "qc.Sprite",
               "data": {
                 "uuid": "453e180d-03ca-4d5d-bc6c-09f56c7e1f79",
@@ -1033,11 +1032,11 @@
                 ],
                 "scaleX": [
                   3,
-                  1
+                  1.5
                 ],
                 "scaleY": [
                   3,
-                  1
+                  1.5
                 ],
                 "rotation": [
                   3,
@@ -1220,11 +1219,11 @@
                 ],
                 "scaleX": [
                   3,
-                  1
+                  2
                 ],
                 "scaleY": [
                   3,
-                  1
+                  2
                 ],
                 "rotation": [
                   3,
@@ -1908,6 +1907,350 @@
                     "enable": true,
                     "explosionSound": null,
                     "explosionAnimation": null
+                  }
+                }
+              }
+            },
+            {
+              "class": "qc.UIImage",
+              "data": {
+                "uuid": "2aba0e66-93a5-402e-8d8a-1010b7004c49",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "rocketship"
+                ],
+                "uniqueName": [
+                  7,
+                  "rocketship"
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [
+                  {
+                    "clazz": "qc.arcade.RigidBody",
+                    "data": "8bc97d05-fa9a-4480-a74f-9b46560c91da"
+                  },
+                  {
+                    "clazz": "qc.TweenAlpha",
+                    "data": "a585d54a-183b-4083-a26f-f88393de7e29"
+                  },
+                  {
+                    "clazz": "qc.engine.Rocketship",
+                    "data": "64156819-9a52-476a-a11b-1c0de505f82c"
+                  }
+                ],
+                "position": [
+                  0.5,
+                  -4.773343692483756e-7,
+                  724.4928462540668,
+                  653.325727757631,
+                  724.4928462540668,
+                  653.325727757631,
+                  82,
+                  176,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  1.000000029106303
+                ],
+                "scaleY": [
+                  3,
+                  1.000000029106303
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": [],
+                "texture": [
+                  10,
+                  "Assets/sprite/rocketship.bin",
+                  "3d26ed8e-5dd3-4518-9fa7-ff7c5a03631c",
+                  0
+                ],
+                "frame": null,
+                "imageType": [
+                  3,
+                  0
+                ],
+                "skewX": [
+                  3,
+                  null
+                ],
+                "skewY": [
+                  3,
+                  null
+                ]
+              },
+              "__json": {
+                "8bc97d05-fa9a-4480-a74f-9b46560c91da": {
+                  "class": "qc.arcade.RigidBody",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "8bc97d05-fa9a-4480-a74f-9b46560c91da"
+                    ],
+                    "enable": true,
+                    "mass": [
+                      3,
+                      1
+                    ],
+                    "collideWorldBounds": [
+                      5,
+                      true
+                    ],
+                    "allowRotation": [
+                      5,
+                      true
+                    ],
+                    "allowGravity": [
+                      5,
+                      true
+                    ],
+                    "velocity": [
+                      24,
+                      "qc.Point",
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "maxVelocity": [
+                      24,
+                      "qc.Point",
+                      [
+                        10000,
+                        10000
+                      ]
+                    ],
+                    "acceleration": [
+                      24,
+                      "qc.Point",
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "drag": [
+                      24,
+                      "qc.Point",
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "gravity": [
+                      24,
+                      "qc.Point",
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "friction": [
+                      24,
+                      "qc.Point",
+                      [
+                        1,
+                        0
+                      ]
+                    ],
+                    "angularVelocity": [
+                      3,
+                      0
+                    ],
+                    "maxAngular": [
+                      3,
+                      1000
+                    ],
+                    "angularAcceleration": [
+                      3,
+                      0
+                    ],
+                    "angularDrag": [
+                      3,
+                      0
+                    ],
+                    "bounce": [
+                      24,
+                      "qc.Point",
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "immovable": [
+                      5,
+                      false
+                    ],
+                    "moves": [
+                      5,
+                      true
+                    ],
+                    "checkCollision": [
+                      9,
+                      {
+                        "none": false,
+                        "any": true,
+                        "up": true,
+                        "down": true,
+                        "left": true,
+                        "right": true
+                      }
+                    ],
+                    "tilePadding": null,
+                    "collides": [
+                      19,
+                      []
+                    ],
+                    "overlaps": [
+                      19,
+                      []
+                    ],
+                    "ccdIterations": [
+                      1,
+                      0
+                    ]
+                  }
+                },
+                "a585d54a-183b-4083-a26f-f88393de7e29": {
+                  "class": "qc.TweenAlpha",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "a585d54a-183b-4083-a26f-f88393de7e29"
+                    ],
+                    "enable": false,
+                    "_curve": [
+                      22,
+                      "qc.BezierCurve",
+                      [
+                        [
+                          0,
+                          0,
+                          1,
+                          1
+                        ],
+                        [
+                          1,
+                          1,
+                          1,
+                          1
+                        ],
+                        [
+                          0,
+                          0
+                        ]
+                      ]
+                    ],
+                    "sampleMethod": [
+                      3,
+                      0
+                    ],
+                    "style": [
+                      3,
+                      2
+                    ],
+                    "delay": [
+                      3,
+                      0
+                    ],
+                    "duration": [
+                      3,
+                      0.3
+                    ],
+                    "tweenGroup": [
+                      3,
+                      0
+                    ],
+                    "flag": [
+                      7,
+                      ""
+                    ],
+                    "playOnAwake": [
+                      5,
+                      false
+                    ],
+                    "from": [
+                      3,
+                      0
+                    ],
+                    "to": [
+                      3,
+                      1
+                    ]
+                  }
+                },
+                "64156819-9a52-476a-a11b-1c0de505f82c": {
+                  "class": "qc.engine.Rocketship",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "64156819-9a52-476a-a11b-1c0de505f82c"
+                    ],
+                    "enable": true,
+                    "velocity": [
+                      1,
+                      300
+                    ],
+                    "bulletRoot": [
+                      18,
+                      "792eb464-347e-4682-a2c6-b37811a54133"
+                    ],
+                    "bulletPrefab": [
+                      18,
+                      "09a137e5-0a3e-49f4-93f5-9c644998bb96"
+                    ],
+                    "explosionSound": [
+                      18,
+                      "10f75bd7-0be1-4db6-9832-605f2fd2eeec"
+                    ],
+                    "explosionAnimation": [
+                      18,
+                      "453e180d-03ca-4d5d-bc6c-09f56c7e1f79"
+                    ]
                   }
                 }
               }
@@ -7405,6 +7748,363 @@
                     }
                   },
                   {
+                    "class": "qc.UIImage",
+                    "data": {
+                      "uuid": "6b587c43-9443-4947-9f7c-a8eee035f69c",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "ShieldIcon"
+                      ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        false
+                      ],
+                      "alpha": [
+                        3,
+                        1
+                      ],
+                      "visible": [
+                        5,
+                        true
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [],
+                      "position": [
+                        0,
+                        0,
+                        19.96241272841013,
+                        97.3120367046304,
+                        19.96241272841013,
+                        97.3120367046304,
+                        36,
+                        40,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1.0000000901029955
+                      ],
+                      "scaleY": [
+                        3,
+                        1.0000000901029955
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        false
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": [],
+                      "texture": [
+                        10,
+                        "Assets/sprite/shield.bin",
+                        "a52b7a15-dcb9-4723-83a4-f48abb084e5c",
+                        0
+                      ],
+                      "frame": null,
+                      "imageType": [
+                        3,
+                        0
+                      ],
+                      "skewX": [
+                        3,
+                        null
+                      ],
+                      "skewY": [
+                        3,
+                        null
+                      ]
+                    }
+                  },
+                  {
+                    "class": "qc.UIImage",
+                    "data": {
+                      "uuid": "5b7695a0-7f0e-4329-9b9b-846b5e8e9439",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "FireButtonL"
+                      ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        false
+                      ],
+                      "alpha": [
+                        3,
+                        0.5
+                      ],
+                      "visible": [
+                        5,
+                        false
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [
+                        {
+                          "clazz": "qc.engine.BulletButton",
+                          "data": "13b233dc-b574-44e5-aea0-ebf0c3ea6e1a"
+                        }
+                      ],
+                      "position": [
+                        0,
+                        0,
+                        21.36729263963008,
+                        688.5284831492913,
+                        21.36729263963008,
+                        688.5284831492913,
+                        256,
+                        256,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1.0000000901029955
+                      ],
+                      "scaleY": [
+                        3,
+                        1.0000000901029955
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "serializeHitArea": [
+                        26,
+                        "qc.Rectangle",
+                        [
+                          0,
+                          0,
+                          1440,
+                          300
+                        ]
+                      ],
+                      "interactive": [
+                        5,
+                        true
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": [],
+                      "texture": [
+                        10,
+                        "Assets/sprite/bullet.bin",
+                        "994c06be-e568-4dc4-8b91-a8a197ad870f",
+                        0
+                      ],
+                      "frame": null,
+                      "imageType": [
+                        3,
+                        0
+                      ],
+                      "skewX": [
+                        3,
+                        null
+                      ],
+                      "skewY": [
+                        3,
+                        null
+                      ]
+                    },
+                    "__json": {
+                      "13b233dc-b574-44e5-aea0-ebf0c3ea6e1a": {
+                        "class": "qc.engine.BulletButton",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "13b233dc-b574-44e5-aea0-ebf0c3ea6e1a"
+                          ],
+                          "enable": true
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "class": "qc.UIImage",
+                    "data": {
+                      "uuid": "ad364364-4f7d-494f-955c-0d2c90c01eff",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "FireButtonR"
+                      ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        false
+                      ],
+                      "alpha": [
+                        3,
+                        0.5
+                      ],
+                      "visible": [
+                        5,
+                        false
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [
+                        {
+                          "clazz": "qc.engine.BulletButton",
+                          "data": "13b233dc-b574-44e5-aea0-ebf0c3ea6e1a"
+                        }
+                      ],
+                      "position": [
+                        0,
+                        0,
+                        1155.8262036555793,
+                        686.9110549415236,
+                        1155.8262036555793,
+                        686.9110549415236,
+                        256,
+                        256,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1.0000001278382213
+                      ],
+                      "scaleY": [
+                        3,
+                        1.0000001278382213
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "serializeHitArea": [
+                        26,
+                        "qc.Rectangle",
+                        [
+                          0,
+                          0,
+                          256,
+                          256
+                        ]
+                      ],
+                      "interactive": [
+                        5,
+                        false
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": [],
+                      "texture": [
+                        10,
+                        "Assets/sprite/bullet.bin",
+                        "994c06be-e568-4dc4-8b91-a8a197ad870f",
+                        0
+                      ],
+                      "frame": null,
+                      "imageType": [
+                        3,
+                        0
+                      ],
+                      "skewX": [
+                        3,
+                        null
+                      ],
+                      "skewY": [
+                        3,
+                        null
+                      ]
+                    },
+                    "__json": {
+                      "13b233dc-b574-44e5-aea0-ebf0c3ea6e1a": {
+                        "class": "qc.engine.BulletButton",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "13b233dc-b574-44e5-aea0-ebf0c3ea6e1a"
+                          ],
+                          "enable": true
+                        }
+                      }
+                    }
+                  },
+                  {
                     "class": "qc.Node",
                     "data": {
                       "uuid": "8ffb6fb8-f7df-431b-b396-ad5229b5850d",
@@ -8258,7 +8958,7 @@
                                 "enable": true,
                                 "toScene": [
                                   7,
-                                  "game_redirect"
+                                  "game"
                                 ]
                               }
                             }
@@ -8338,701 +9038,6 @@
                     }
                   }
                 ]
-              }
-            },
-            {
-              "class": "qc.UIImage",
-              "data": {
-                "uuid": "2aba0e66-93a5-402e-8d8a-1010b7004c49",
-                "_prefab": [
-                  7,
-                  ""
-                ],
-                "__lock": [
-                  5,
-                  null
-                ],
-                "name": [
-                  7,
-                  "rocketship"
-                ],
-                "uniqueName": [
-                  7,
-                  "rocketship"
-                ],
-                "ignoreDestroy": [
-                  5,
-                  false
-                ],
-                "alpha": [
-                  3,
-                  0.8899999999999847
-                ],
-                "visible": [
-                  5,
-                  true
-                ],
-                "colorTint": [
-                  14,
-                  16777215
-                ],
-                "static": [
-                  5,
-                  false
-                ],
-                "scripts": [
-                  {
-                    "clazz": "qc.arcade.RigidBody",
-                    "data": "8bc97d05-fa9a-4480-a74f-9b46560c91da"
-                  },
-                  {
-                    "clazz": "qc.TweenAlpha",
-                    "data": "a585d54a-183b-4083-a26f-f88393de7e29"
-                  },
-                  {
-                    "clazz": "qc.engine.Rocketship",
-                    "data": "64156819-9a52-476a-a11b-1c0de505f82c"
-                  },
-                  {
-                    "clazz": "qc.engine.FollowPointer",
-                    "data": "6917320e-b9ac-4ac8-ae6f-e6bedf6c79e0"
-                  }
-                ],
-                "position": [
-                  0.5,
-                  -4.773343692483756e-7,
-                  724.4928392916559,
-                  776.1282528798873,
-                  724.4928392916559,
-                  776.1282528798873,
-                  96,
-                  148,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "scaleX": [
-                  3,
-                  1
-                ],
-                "scaleY": [
-                  3,
-                  1
-                ],
-                "rotation": [
-                  3,
-                  0
-                ],
-                "interactive": [
-                  5,
-                  true
-                ],
-                "isFiltersThrough": [
-                  5,
-                  null
-                ],
-                "children": [],
-                "texture": [
-                  10,
-                  "Assets/sprite/rocketship.bin",
-                  "3d26ed8e-5dd3-4518-9fa7-ff7c5a03631c",
-                  0
-                ],
-                "frame": null,
-                "imageType": [
-                  3,
-                  0
-                ],
-                "skewX": [
-                  3,
-                  null
-                ],
-                "skewY": [
-                  3,
-                  null
-                ]
-              },
-              "__json": {
-                "8bc97d05-fa9a-4480-a74f-9b46560c91da": {
-                  "class": "qc.arcade.RigidBody",
-                  "data": {
-                    "uuid": [
-                      7,
-                      "8bc97d05-fa9a-4480-a74f-9b46560c91da"
-                    ],
-                    "enable": true,
-                    "mass": [
-                      3,
-                      1
-                    ],
-                    "collideWorldBounds": [
-                      5,
-                      true
-                    ],
-                    "allowRotation": [
-                      5,
-                      true
-                    ],
-                    "allowGravity": [
-                      5,
-                      true
-                    ],
-                    "velocity": [
-                      24,
-                      "qc.Point",
-                      [
-                        0,
-                        0
-                      ]
-                    ],
-                    "maxVelocity": [
-                      24,
-                      "qc.Point",
-                      [
-                        10000,
-                        10000
-                      ]
-                    ],
-                    "acceleration": [
-                      24,
-                      "qc.Point",
-                      [
-                        0,
-                        0
-                      ]
-                    ],
-                    "drag": [
-                      24,
-                      "qc.Point",
-                      [
-                        0,
-                        0
-                      ]
-                    ],
-                    "gravity": [
-                      24,
-                      "qc.Point",
-                      [
-                        0,
-                        0
-                      ]
-                    ],
-                    "friction": [
-                      24,
-                      "qc.Point",
-                      [
-                        1,
-                        0
-                      ]
-                    ],
-                    "angularVelocity": [
-                      3,
-                      0
-                    ],
-                    "maxAngular": [
-                      3,
-                      1000
-                    ],
-                    "angularAcceleration": [
-                      3,
-                      0
-                    ],
-                    "angularDrag": [
-                      3,
-                      0
-                    ],
-                    "bounce": [
-                      24,
-                      "qc.Point",
-                      [
-                        0,
-                        0
-                      ]
-                    ],
-                    "immovable": [
-                      5,
-                      false
-                    ],
-                    "moves": [
-                      5,
-                      true
-                    ],
-                    "checkCollision": [
-                      9,
-                      {
-                        "none": false,
-                        "any": true,
-                        "up": true,
-                        "down": true,
-                        "left": true,
-                        "right": true
-                      }
-                    ],
-                    "tilePadding": null,
-                    "collides": [
-                      19,
-                      []
-                    ],
-                    "overlaps": [
-                      19,
-                      []
-                    ],
-                    "ccdIterations": [
-                      1,
-                      0
-                    ]
-                  }
-                },
-                "a585d54a-183b-4083-a26f-f88393de7e29": {
-                  "class": "qc.TweenAlpha",
-                  "data": {
-                    "uuid": [
-                      7,
-                      "a585d54a-183b-4083-a26f-f88393de7e29"
-                    ],
-                    "enable": false,
-                    "_curve": [
-                      22,
-                      "qc.BezierCurve",
-                      [
-                        [
-                          0,
-                          0,
-                          1,
-                          1
-                        ],
-                        [
-                          1,
-                          1,
-                          1,
-                          1
-                        ],
-                        [
-                          0,
-                          0
-                        ]
-                      ]
-                    ],
-                    "sampleMethod": [
-                      3,
-                      0
-                    ],
-                    "style": [
-                      3,
-                      2
-                    ],
-                    "delay": [
-                      3,
-                      0
-                    ],
-                    "duration": [
-                      3,
-                      0.3
-                    ],
-                    "tweenGroup": [
-                      3,
-                      0
-                    ],
-                    "flag": [
-                      7,
-                      ""
-                    ],
-                    "playOnAwake": [
-                      5,
-                      false
-                    ],
-                    "from": [
-                      3,
-                      0
-                    ],
-                    "to": [
-                      3,
-                      1
-                    ]
-                  }
-                },
-                "64156819-9a52-476a-a11b-1c0de505f82c": {
-                  "class": "qc.engine.Rocketship",
-                  "data": {
-                    "uuid": [
-                      7,
-                      "64156819-9a52-476a-a11b-1c0de505f82c"
-                    ],
-                    "enable": true,
-                    "velocity": [
-                      1,
-                      300
-                    ],
-                    "bulletRoot": [
-                      18,
-                      "792eb464-347e-4682-a2c6-b37811a54133"
-                    ],
-                    "bulletPrefab": [
-                      18,
-                      "09a137e5-0a3e-49f4-93f5-9c644998bb96"
-                    ],
-                    "explosionSound": [
-                      18,
-                      "10f75bd7-0be1-4db6-9832-605f2fd2eeec"
-                    ],
-                    "explosionAnimation": [
-                      18,
-                      "453e180d-03ca-4d5d-bc6c-09f56c7e1f79"
-                    ]
-                  }
-                },
-                "6917320e-b9ac-4ac8-ae6f-e6bedf6c79e0": {
-                  "class": "qc.engine.FollowPointer",
-                  "data": {
-                    "uuid": [
-                      7,
-                      "6917320e-b9ac-4ac8-ae6f-e6bedf6c79e0"
-                    ],
-                    "enable": true
-                  }
-                }
-              }
-            },
-            {
-              "class": "qc.UIImage",
-              "data": {
-                "uuid": "6b587c43-9443-4947-9f7c-a8eee035f69c",
-                "_prefab": [
-                  7,
-                  ""
-                ],
-                "__lock": [
-                  5,
-                  null
-                ],
-                "name": [
-                  7,
-                  "ShieldIcon"
-                ],
-                "uniqueName": [
-                  7,
-                  ""
-                ],
-                "ignoreDestroy": [
-                  5,
-                  false
-                ],
-                "alpha": [
-                  3,
-                  1
-                ],
-                "visible": [
-                  5,
-                  true
-                ],
-                "colorTint": [
-                  14,
-                  16777215
-                ],
-                "static": [
-                  5,
-                  false
-                ],
-                "scripts": [],
-                "position": [
-                  0,
-                  0,
-                  19.96242505464585,
-                  97.31202787831256,
-                  19.96242505464585,
-                  97.31202787831256,
-                  36,
-                  40,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "scaleX": [
-                  3,
-                  1
-                ],
-                "scaleY": [
-                  3,
-                  1
-                ],
-                "rotation": [
-                  3,
-                  0
-                ],
-                "interactive": [
-                  5,
-                  false
-                ],
-                "isFiltersThrough": [
-                  5,
-                  null
-                ],
-                "children": [],
-                "texture": [
-                  10,
-                  "Assets/sprite/shield.bin",
-                  "a52b7a15-dcb9-4723-83a4-f48abb084e5c",
-                  0
-                ],
-                "frame": null,
-                "imageType": [
-                  3,
-                  0
-                ],
-                "skewX": [
-                  3,
-                  null
-                ],
-                "skewY": [
-                  3,
-                  null
-                ]
-              }
-            },
-            {
-              "class": "qc.UIImage",
-              "data": {
-                "uuid": "5b7695a0-7f0e-4329-9b9b-846b5e8e9439",
-                "_prefab": [
-                  7,
-                  ""
-                ],
-                "__lock": [
-                  5,
-                  null
-                ],
-                "name": [
-                  7,
-                  "FireButtonL"
-                ],
-                "uniqueName": [
-                  7,
-                  ""
-                ],
-                "ignoreDestroy": [
-                  5,
-                  false
-                ],
-                "alpha": [
-                  3,
-                  0.5
-                ],
-                "visible": [
-                  5,
-                  true
-                ],
-                "colorTint": [
-                  14,
-                  16777215
-                ],
-                "static": [
-                  5,
-                  false
-                ],
-                "scripts": [
-                  {
-                    "clazz": "qc.engine.BulletButton",
-                    "data": "13b233dc-b574-44e5-aea0-ebf0c3ea6e1a"
-                  }
-                ],
-                "position": [
-                  0,
-                  0,
-                  21.36730483928197,
-                  688.5284210526054,
-                  21.36730483928197,
-                  688.5284210526054,
-                  256,
-                  256,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "scaleX": [
-                  3,
-                  1
-                ],
-                "scaleY": [
-                  3,
-                  1
-                ],
-                "rotation": [
-                  3,
-                  0
-                ],
-                "interactive": [
-                  5,
-                  true
-                ],
-                "isFiltersThrough": [
-                  5,
-                  null
-                ],
-                "children": [],
-                "texture": [
-                  10,
-                  "Assets/sprite/bullet.bin",
-                  "994c06be-e568-4dc4-8b91-a8a197ad870f",
-                  0
-                ],
-                "frame": null,
-                "imageType": [
-                  3,
-                  0
-                ],
-                "skewX": [
-                  3,
-                  null
-                ],
-                "skewY": [
-                  3,
-                  null
-                ]
-              },
-              "__json": {
-                "13b233dc-b574-44e5-aea0-ebf0c3ea6e1a": {
-                  "class": "qc.engine.BulletButton",
-                  "data": {
-                    "uuid": [
-                      7,
-                      "13b233dc-b574-44e5-aea0-ebf0c3ea6e1a"
-                    ],
-                    "enable": true
-                  }
-                }
-              }
-            },
-            {
-              "class": "qc.UIImage",
-              "data": {
-                "uuid": "ad364364-4f7d-494f-955c-0d2c90c01eff",
-                "_prefab": [
-                  7,
-                  ""
-                ],
-                "__lock": [
-                  5,
-                  null
-                ],
-                "name": [
-                  7,
-                  "FireButtonR"
-                ],
-                "uniqueName": [
-                  7,
-                  ""
-                ],
-                "ignoreDestroy": [
-                  5,
-                  false
-                ],
-                "alpha": [
-                  3,
-                  0.5
-                ],
-                "visible": [
-                  5,
-                  true
-                ],
-                "colorTint": [
-                  14,
-                  16777215
-                ],
-                "static": [
-                  5,
-                  false
-                ],
-                "scripts": [
-                  {
-                    "clazz": "qc.engine.BulletButton",
-                    "data": "13b233dc-b574-44e5-aea0-ebf0c3ea6e1a"
-                  }
-                ],
-                "position": [
-                  0,
-                  0,
-                  1155.8260685270557,
-                  686.9109713881737,
-                  1155.8260685270557,
-                  686.9109713881737,
-                  256,
-                  256,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "scaleX": [
-                  3,
-                  1
-                ],
-                "scaleY": [
-                  3,
-                  1
-                ],
-                "rotation": [
-                  3,
-                  0
-                ],
-                "interactive": [
-                  5,
-                  true
-                ],
-                "isFiltersThrough": [
-                  5,
-                  null
-                ],
-                "children": [],
-                "texture": [
-                  10,
-                  "Assets/sprite/bullet.bin",
-                  "994c06be-e568-4dc4-8b91-a8a197ad870f",
-                  0
-                ],
-                "frame": null,
-                "imageType": [
-                  3,
-                  0
-                ],
-                "skewX": [
-                  3,
-                  null
-                ],
-                "skewY": [
-                  3,
-                  null
-                ]
-              },
-              "__json": {
-                "13b233dc-b574-44e5-aea0-ebf0c3ea6e1a": {
-                  "class": "qc.engine.BulletButton",
-                  "data": {
-                    "uuid": [
-                      7,
-                      "13b233dc-b574-44e5-aea0-ebf0c3ea6e1a"
-                    ],
-                    "enable": true
-                  }
-                }
               }
             }
           ]
@@ -9161,10 +9166,6 @@
     ]
   },
   "dependences": {
-    "b13126da-d3d8-4637-bb4a-d948abfbc6d8": {
-      "key": "Assets/texture/deep-space.bin",
-      "uuid": "b13126da-d3d8-4637-bb4a-d948abfbc6d8"
-    },
     "9f5c32aa-636c-4267-83e9-a6ff072abd04": {
       "key": "Assets/audio/explosion.mp3.bin",
       "uuid": "9f5c32aa-636c-4267-83e9-a6ff072abd04"
@@ -9185,6 +9186,10 @@
       "key": "Assets/audio/powerup.mp3.bin",
       "uuid": "649bbcdc-c2d6-44c8-a21d-ff0d0051a73e"
     },
+    "b13126da-d3d8-4637-bb4a-d948abfbc6d8": {
+      "key": "Assets/texture/deep-space.bin",
+      "uuid": "b13126da-d3d8-4637-bb4a-d948abfbc6d8"
+    },
     "d31138eb-f4cd-4dee-8a53-322230e88315": {
       "key": "Assets/atlas/explosion.bin",
       "uuid": "d31138eb-f4cd-4dee-8a53-322230e88315"
@@ -9197,6 +9202,10 @@
       "key": "Assets/sprite/bullet.bin",
       "uuid": "994c06be-e568-4dc4-8b91-a8a197ad870f"
     },
+    "3d26ed8e-5dd3-4518-9fa7-ff7c5a03631c": {
+      "key": "Assets/sprite/rocketship.bin",
+      "uuid": "3d26ed8e-5dd3-4518-9fa7-ff7c5a03631c"
+    },
     "65ead187-1f97-4b8f-9880-39c8c00988d4": {
       "key": "Assets/sprite/meteor.bin",
       "uuid": "65ead187-1f97-4b8f-9880-39c8c00988d4"
@@ -9204,10 +9213,6 @@
     "__builtin_resource__": {
       "key": "__builtin_resource__",
       "uuid": "__builtin_resource__"
-    },
-    "3d26ed8e-5dd3-4518-9fa7-ff7c5a03631c": {
-      "key": "Assets/sprite/rocketship.bin",
-      "uuid": "3d26ed8e-5dd3-4518-9fa7-ff7c5a03631c"
     },
     "a52b7a15-dcb9-4723-83a4-f48abb084e5c": {
       "key": "Assets/sprite/shield.bin",

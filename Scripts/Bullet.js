@@ -22,7 +22,7 @@ Bullet.prototype.onOverlap = function(o1, asteroid) {
     //console.log('bullet onOverlap', o1, asteroid);
     
     var self = this;
-    var explode = self.explosionAnimation; //self.game.world.find('/UIRoot/explode');
+    var explode = self.explosionAnimation; //self.game.world.find('/GameRoot/explode');
     explode = self.game.add.clone(explode);
 	self.game.add.clone(self.explosionSound).play();
     

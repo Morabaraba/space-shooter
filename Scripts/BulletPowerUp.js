@@ -10,7 +10,7 @@ var BulletPowerUp = qc.defineBehaviour('qc.engine.BulletPowerUp', qc.Behaviour, 
 BulletPowerUp.prototype.awake = function() {
     var self = this;
 	self.body = self.getScript('qc.arcade.RigidBody');
-    self.rocketShip = self.rocketShip || self.game.world.find('/UIRoot/rocketship');    
+    self.rocketShip = self.rocketShip || self.game.world.find('/GameRoot/rocketship');    
     self.body.addOverlap(self.rocketShip);    
 };
 
