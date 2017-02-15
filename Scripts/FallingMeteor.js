@@ -3,6 +3,7 @@ var FallingMeteor = qc.defineBehaviour('qc.meteor.FallingMeteor', qc.Behaviour, 
     // need this behaviour be scheduled in editor
     //this.runInEditor = true;
     this.showingDamage = false;
+    this.velocity = 300;
 }, {
     // fields need to be serialized
     rocketShip : qc.Serializer.NODE 
@@ -12,7 +13,8 @@ var FallingMeteor = qc.defineBehaviour('qc.meteor.FallingMeteor', qc.Behaviour, 
 FallingMeteor.prototype.awake = function() {
     var self = this;
 	self.body = self.getScript('qc.arcade.RigidBody');
-    self.rocketShip = self.rocketShip || self.game.world.find('/UIRoot/rocketship');
+    self.rocketShip = /*self.rocketShip ||*/ self.game.world.find('/GameRoot/rocketship');
+    self.body.velocity.y = this.velocity;
     self.body.addOverlap( self.rocketShip );
     // create body if it does not exist TODO
 };
@@ -36,20 +38,21 @@ FallingMeteor.prototype.restartPos = function() {
     self.gameObject.scaleX = 1.25  + ( rnd.integerInRange(0, 100) / 100);
     self.gameObject.scaleY = self.gameObject.scaleX;
 
-    self.body.velocity.x = rnd.integerInRange(-450,450);
+    self.body.velocity.x = rnd.integerInRange(-this.velocity,this.velocity);
  };
 
 FallingMeteor.prototype.onOverlap = function(o1, o2) {
     //console.log('onOverlap', o1, o2);
     var self = this;
-    var explode = self.game.world.find('/UIRoot/explode');
+    var explode = self.game.world.find('/GameRoot/explode');
     explode = self.game.add.clone(explode);
 
     explode.x = o1.x;
     explode.y = o1.y;
-    explode.onFinished = function() {
+    explode.onFinished.add(function() {
+        console.log('destory explode', this);
         this.destroy();
-    };
+    }, explode);
     explode.playAnimation('explode', 1, false);
     explode.visible = true;
     
@@ -69,7 +72,8 @@ FallingMeteor.prototype.onOverlap = function(o1, o2) {
 
         self.rocketShip.getScript('qc.TweenAlpha').enable=true;
         this.game.timer.add(1500, function() {
-            self.rocketShip.getScript('qc.TweenAlpha').enable=false;
+            var tween = self.rocketShip.getScript('qc.TweenAlpha');
+            if (tween) tween.enable=false;
             self.rocketShip.alpha = 1;
             self.showingDamage = false;
         });

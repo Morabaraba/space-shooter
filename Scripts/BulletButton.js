@@ -17,7 +17,7 @@ var BulletButton = qc.defineBehaviour('qc.engine.BulletButton', qc.Behaviour, fu
 //};
 
 BulletButton.prototype.onClick = function(event) {
-    var rocketScript = this.game.world.find('/UIRoot/rocketship').getScript('qc.engine.Rocketship');
+    var rocketScript = this.game.world.find('/GameRoot/rocketship').getScript('qc.engine.Rocketship');
 
     rocketScript.fire();
     
